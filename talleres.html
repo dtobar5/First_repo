@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="En JakyYoga encontrarás todo lo que necesitas saber acerca del yoga, junto a las diferentes sesiones personalizadas y grupales que tenemos disponibles."
+    />
+
+    <meta
+      name="keywords"
+      content="YOGA, CLASE, TALLER, PRINCIPIANTES, ONLINE, EMBARAZADAS, ESPALDA BAJA, EJERCICIOS, INTEGRAL, INSTRUCTORA, CHILE, GRATIS, POSICIONES, MUJER, ZOOM, CASA"
+    />
+
+    <!-- Link de Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link de Fuente Poppins-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link de Fuente Halimun -->
+    <link href="http://fonts.cdnfonts.com/css/halimun" rel="stylesheet" />
+
+    <!-- Link de Iconos Fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link de Icono -->
+    <link rel="shortcut icon" type="image/x-icon" href="./icon/favicon.ico" />
+
+    <!-- Link de CSS-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>
+      JakyYoga - Completo listado de todas las sesiones grupales que tenemos
+      disponibles para ti
+    </title>
+  </head>
+  <body>
+    <!-- Sección Header, incluyendo logo y Menú de Navegación-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="contenedorLogo">
+            <a href="index.html"
+              ><img src="./media/logo.sin.fondo.png" alt="Logo de JakyYoga"
+            /></a>
+          </div>
+
+          <button
+            class="navbar-toggler btnColor"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse opcionesNav" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link hov" href="clases.html"
+                  >Sesiones Personalizadas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hov" href="#">Sesiones Grupales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hov" href="sobremi.html">Sobre Jaky</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hov" href="contactame.html">Contáctame</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hov" href="pideclase.html"
+                  >Pide tu Clase Gratis</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Sección Main-->
+
+    <main>
+      <div class="galeriaTalleres">
+        <h1>Sesiones Grupales</h1>
+        <p>
+          Comparte tu sala virtual con más mujeres que buscan exactamente lo
+          mismo que buscas tú, en estas sesiones tendrás la posibilidad de
+          recibir feedback de cada una de tus compañeras, un ambiente amoroso de
+          crecimiento y transformación poderosa.
+        </p>
+        <!-- Button trigger modal -->
+
+        <div class="conttBot">
+          <div class="botonesTaller">
+            <div class="botUno">
+              <button
+                type="button"
+                class="btn btn-primary botOne"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModalUno"
+              >
+                Programas JakyYoga Grupales
+              </button>
+            </div>
+          </div>
+
+          <div class="botonesTaller">
+            <div class="botDos">
+              <button
+                type="button"
+                class="btn btn-primary botTwo"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModalDos"
+              >
+                Talleres en Vivo
+              </button>
+            </div>
+          </div>
+
+          <div class="botonesTaller">
+            <div class="botTres">
+              <button
+                type="button"
+                class="btn btn-primary botThree"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModalTres"
+              >
+                Clase Gratuita Mensual
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 1 -->
+        <div
+          class="modal fade"
+          id="exampleModalUno"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content popupMedida">
+              <div class="modal-header">
+                <h5 class="modal-title popTitCuatro" id="staticBackdropLabel">
+                  Programas JakyYoga Grupales
+                </h5>
+              </div>
+
+              <div class="contenPopup">
+                <div class="modal-footer popup">
+                  <div class="popupCont">
+                    <img
+                      src="./media/taller1.jpeg"
+                      alt="Silueta de tres mujeres saltando de alegría de espalda al sol"
+                    />
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Logra tu completa transformación en comunidad, en donde
+                    creceremos apoyándonos unas con otras.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div
+          class="modal fade"
+          id="exampleModalDos"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content popupMedida">
+              <div class="modal-header">
+                <h5 class="modal-title popTitCinco" id="staticBackdropLabel">
+                  Talleres en Vivo
+                </h5>
+              </div>
+
+              <div class="contenPopup">
+                <div class="modal-footer popup">
+                  <div class="popupCont">
+                    <img
+                      src="./media/taller2.jpeg"
+                      alt="Mujer sentada de piernas cruzadas frente a computadora, realizando un saludo con la mano"
+                    />
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <p class="popTxt">
+                    Aprende en familia acerca de todas las temáticas que engloba
+                    el Auto Conocimiento, tanto de la Filosofía del Yoga,
+                    Astrología Maya y muchos temas más que te permitirán acceder
+                    a esas puertas escondidas con las respuestas de tu ser.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div
+          class="modal fade"
+          id="exampleModalTres"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content popupMedida">
+              <div class="modal-header">
+                <h5 class="modal-title popTitSeis" id="staticBackdropLabel">
+                  Clase Gratuita Mensual
+                </h5>
+              </div>
+
+              <div class="contenPopup">
+                <div class="modal-footer popup">
+                  <div class="popupCont">
+                    <img
+                      src="./media/taller3.jpeg"
+                      alt="Madre enseñandole a su hijo pequeño una postura básica de yoga"
+                    />
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Disfruta de nuestro Regalo JakyYoga mensual, un encuentro
+                    completamente gratuito junto a toda la comunidad Jaky.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--Sección Footer-->
+    <footer>
+      <div class="piePagina">
+        <!--Sección logo del Footer-->
+        <div class="sec1">
+          <img src="./media/logo.sin.fondo.png" alt="Logo de JakyYoga" />
+        </div>
+
+        <!--Sección Clases del Footer-->
+        <div class="sec2">
+          <h2>Sesiones Personalizadas</h2>
+          <ul>
+            <li><a href="clases.html">Clases JakyYoga</a></li>
+            <li><a href="clases.html">Sesiones Autodesc. Maya</a></li>
+            <li><a href="clases.html">Intensivo JakyYoga</a></li>
+          </ul>
+        </div>
+
+        <!--Sección Talleres del Footer-->
+        <div class="sec3">
+          <h2>Sesiones Grupales</h2>
+          <ul>
+            <li><a href="#">Prog. JakyYoga Grupales</a></li>
+            <li><a href="#">Talleres en Vivo</a></li>
+            <li><a href="#">Clase Gratuita Mensual</a></li>
+          </ul>
+        </div>
+
+        <!--Sección Redes del Footer-->
+        <div class="sec4">
+          <h2>Redes Sociales</h2>
+          <ul>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=56949257811&text=Hola,%20me%20interesa%20saber%20mas%20sobre%20las%20sesiones%20disponibles..."
+                ><i class="fa fa-whatsapp" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/jaky.yoga/?hl=es"
+                ><i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/yogaconjaky"
+                ><i class="fa fa-facebook-official" aria-hidden="true"></i
+              ></a>
+            </li>
+            <!--<li><a href="#"><i class="fab fa-tiktok"></i></a></li>-->
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2021. JakyYoga. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <div class="contSocial">
+      <div class="botonesSocial">
+        <a
+          href="https://api.whatsapp.com/send?phone=56949257811&text=Hola,%20me%20interesa%20saber%20mas%20sobre%20las%20sesiones%20disponibles..."
+          class="icon-button whats"
+          ><i class="fa fa-whatsapp icon-whats" aria-hidden="true"></i
+          ><span></span
+        ></a>
+
+        <a
+          href="https://www.instagram.com/jaky.yoga/?hl=es"
+          class="icon-button insta"
+          ><i class="fa fa-instagram icon-insta" aria-hidden="true"></i
+          ><span></span
+        ></a>
+
+        <a href="https://www.facebook.com/yogaconjaky" class="icon-button face"
+          ><i class="fa fa-facebook-official icon-face" aria-hidden="true"></i
+          ><span></span
+        ></a>
+
+        <!--<a href="#" class="icon-button mail"
+          ><i class="fa fa-envelope-o icon-mail" aria-hidden="true"></i
+          ><span></span
+        ></a>-->
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
