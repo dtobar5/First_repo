@@ -1,0 +1,3544 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Poppins", sans-serif; }
+
+/*
+@font-face {
+  font-family: "Halimun";
+  src: url("../font/Halimun.ttf") format("truetype");
+}*/
+/* Variables */
+/*Sección Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50; }
+  header .opcionesNav li {
+    color: #5f5f79;
+    font-size: 18px;
+    margin-right: 40px; }
+  header .hov {
+    transition: all 0.5s ease;
+    font-size: 15px; }
+  header .hov:hover {
+    color: #36beb1 !important; }
+  header .btnColor {
+    outline-style: solid;
+    outline-color: #87bdb7;
+    outline-width: 1px; }
+  header .contenedorLogo {
+    flex: 15;
+    justify-content: flex-start;
+    align-items: center; }
+    header .contenedorLogo img {
+      width: 70px;
+      margin-left: 20px;
+      margin-right: 25px; }
+
+/* Seccion Carrusel */
+.imgOne {
+  height: 80vh;
+  width: 100%;
+  background-image: url("../media/carrusel1.jpeg");
+  background-size: cover;
+  background-position: 25% 25%; }
+  .imgOne h1 {
+    position: absolute;
+    bottom: 113px;
+    right: 20px;
+    padding: 20px 0px 0px 100px;
+    font-size: 32px;
+    width: 550px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 3px;
+    color: white;
+    background: rgba(0, 0, 0, 0.18);
+    text-shadow: 2px 2px 2px black;
+    font-style: italic; }
+  .imgOne p {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    padding: 20px 60px 0px 0px;
+    font-size: 15px;
+    width: 550px;
+    height: 100px;
+    text-align: right;
+    color: white;
+    background: rgba(0, 0, 0, 0.18); }
+  .imgOne a {
+    position: absolute;
+    right: 80px;
+    bottom: 30px;
+    font-size: 15px;
+    text-align: right;
+    color: white;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    text-shadow: 3px 3px 2px black;
+    letter-spacing: 2px; }
+  .imgOne a:hover {
+    color: #62f1e3;
+    text-decoration: none; }
+
+.imgTwo {
+  height: 80vh;
+  width: 100%;
+  background-image: url("../media/carrusel2.jpeg");
+  background-size: cover;
+  background-position: center; }
+  .imgTwo h1 {
+    position: absolute;
+    bottom: 113px;
+    right: 20px;
+    padding: 10px 0px 0px 110px;
+    font-size: 35px;
+    width: 550px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 3px;
+    color: white;
+    background: rgba(0, 0, 0, 0.18);
+    text-shadow: 2px 2px 2px black;
+    font-style: italic; }
+  .imgTwo p {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    padding: 20px 50px 0px 0px;
+    font-size: 15px;
+    width: 550px;
+    height: 100px;
+    text-align: right;
+    color: white;
+    background: rgba(0, 0, 0, 0.18); }
+  .imgTwo a {
+    position: absolute;
+    right: 70px;
+    bottom: 30px;
+    font-size: 15px;
+    text-align: right;
+    color: white;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    text-shadow: 3px 3px 2px black;
+    letter-spacing: 2px; }
+  .imgTwo a:hover {
+    color: #62f1e3;
+    text-decoration: none; }
+
+.imgThree {
+  height: 80vh;
+  width: 100%;
+  background-image: url("../media/carrusel3.jpeg");
+  background-size: cover;
+  background-position: center; }
+  .imgThree h1 {
+    position: absolute;
+    bottom: 113px;
+    right: 20px;
+    padding: 25px 0px 0px 70px;
+    font-size: 24px;
+    width: 550px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 3px;
+    color: white;
+    background: rgba(0, 0, 0, 0.18);
+    text-shadow: 2px 2px 2px black;
+    font-style: italic; }
+  .imgThree p {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    padding: 20px 50px 0px 10px;
+    font-size: 15px;
+    width: 550px;
+    height: 100px;
+    text-align: right;
+    color: white;
+    background: rgba(0, 0, 0, 0.18); }
+  .imgThree a {
+    position: absolute;
+    right: 70px;
+    bottom: 30px;
+    font-size: 15px;
+    text-align: right;
+    color: white;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    text-shadow: 3px 3px 2px black;
+    letter-spacing: 2px; }
+  .imgThree a:hover {
+    color: #62f1e3;
+    text-decoration: none; }
+
+/* Sección Video Presentación */
+.videoPresentacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px; }
+  .videoPresentacion .videoContenedor {
+    height: 360px;
+    box-shadow: 10px 10px 15px #8c9191; }
+
+/* Seccion Primer Menu */
+.seccionPrimerMenu {
+  height: 440px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #caf4f7; }
+  .seccionPrimerMenu .menuUno,
+  .seccionPrimerMenu .menuDos {
+    width: 600px;
+    height: 400px;
+    box-shadow: 10px 10px 15px #8c9191; }
+  .seccionPrimerMenu .menuUno:hover .back,
+  .seccionPrimerMenu .menuDos:hover .back {
+    opacity: 1; }
+  .seccionPrimerMenu .menuUno:hover .frontTxt,
+  .seccionPrimerMenu .menuDos:hover .frontTxt {
+    opacity: 0; }
+  .seccionPrimerMenu .uno,
+  .seccionPrimerMenu .dos {
+    height: 100%;
+    width: 100%;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d; }
+  .seccionPrimerMenu .front {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; }
+    .seccionPrimerMenu .front img {
+      height: 100%;
+      width: 100%;
+      opacity: 0.7;
+      position: relative;
+      border-radius: 5px; }
+  .seccionPrimerMenu .frontTxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease; }
+    .seccionPrimerMenu .frontTxt h1 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: rgba(0, 0, 0, 0.7);
+      font-family: "Poppins", sans-serif;
+      font-size: 32px;
+      font-weight: bolder;
+      text-shadow: 1px 1px 2px white;
+      letter-spacing: 3px; }
+  .seccionPrimerMenu .back {
+    background-color: rgba(72, 181, 189, 0.7);
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; }
+    .seccionPrimerMenu .back p {
+      font-size: 15px;
+      padding: 0px 50px 0px 50px;
+      margin-top: 80px;
+      text-align: center;
+      line-height: 30px; }
+  .seccionPrimerMenu .btn {
+    background: white;
+    height: 30px;
+    width: 200px;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    z-index: 5;
+    border: 0.2px solid black;
+    font-weight: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    font-family: "Poppins", sans-serif;
+    margin-top: 300px;
+    outline: none;
+    border-radius: 10px; }
+  .seccionPrimerMenu .btn:hover {
+    background: #2b6c70;
+    color: white; }
+
+/* Sección Testimonios */
+.secTest {
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  background: whitesmoke; }
+  .secTest .secTest__contenedor {
+    height: 400px;
+    width: 450px; }
+    .secTest .secTest__contenedor .secTest__card {
+      height: 100%;
+      width: 100%;
+      transition: transform 1s ease-in-out;
+      transform-style: preserve-3d; }
+      .secTest .secTest__contenedor .secTest__card figure {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px; }
+      .secTest .secTest__contenedor .secTest__card .secTest__delante {
+        height: 100%;
+        width: 100%;
+        background: #8fdbe0; }
+        .secTest .secTest__contenedor .secTest__card .secTest__delante .secTest__imagen {
+          display: flex;
+          justify-content: center;
+          width: 250px;
+          height: 250px; }
+          .secTest .secTest__contenedor .secTest__card .secTest__delante .secTest__imagen img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 40px;
+            border-radius: 50%; }
+        .secTest .secTest__contenedor .secTest__card .secTest__delante .secTest__nombre {
+          text-align: center;
+          font-size: 20px;
+          margin-top: 20px;
+          color: #8b3636; }
+      .secTest .secTest__contenedor .secTest__card .secTest__detras {
+        background: #8fdbe0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotateY(180deg); }
+        .secTest .secTest__contenedor .secTest__card .secTest__detras .secTest__testimonio {
+          padding: 30px;
+          line-height: 30px;
+          color: #8b3636;
+          text-align: left;
+          font-size: 14px;
+          letter-spacing: 0.5px; }
+          .secTest .secTest__contenedor .secTest__card .secTest__detras .secTest__testimonio b {
+            font-style: italic;
+            padding: 0 5px;
+            font-size: 20px; }
+  .secTest .secTest__contenedor:hover .secTest__card {
+    transform: rotateY(180deg); }
+
+/*Sección Segundo Menu */
+.seccionSegundoMenu {
+  height: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+  .seccionSegundoMenu .menuTres {
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%; }
+    .seccionSegundoMenu .menuTres .tresTxt {
+      width: 100%;
+      height: 100%;
+      background: #6cb9be;
+      border-right: 0.1px solid #838383;
+      border-bottom: 0.1px solid #838383;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .seccionSegundoMenu .menuTres .tresTxt h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 35px;
+        padding-bottom: 60px;
+        padding-top: 40px;
+        text-shadow: 2px 2px 2px white;
+        letter-spacing: 3px;
+        font-style: italic; }
+      .seccionSegundoMenu .menuTres .tresTxt p {
+        font-size: 15px;
+        padding: 0px 35px 10px 35px;
+        margin-bottom: 70px;
+        text-align: center;
+        line-height: 30px; }
+        .seccionSegundoMenu .menuTres .tresTxt p a {
+          text-decoration: none;
+          color: #8b3636;
+          letter-spacing: 1px;
+          font-weight: bold; }
+        .seccionSegundoMenu .menuTres .tresTxt p a:hover {
+          color: white;
+          text-shadow: 2px 2px 2px black; }
+  .seccionSegundoMenu .menuCuatro {
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%; }
+    .seccionSegundoMenu .menuCuatro .cuatroTxt {
+      width: 100%;
+      height: 100%;
+      background: #6cb9be;
+      border-top: 0.1px solid #838383;
+      border-left: 0.1px solid #838383;
+      border-bottom: 0.1px solid #838383;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .seccionSegundoMenu .menuCuatro .cuatroTxt h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 35px;
+        padding-bottom: 60px;
+        padding-top: 40px;
+        text-shadow: 2px 2px 2px white;
+        letter-spacing: 3px;
+        font-style: italic; }
+      .seccionSegundoMenu .menuCuatro .cuatroTxt p {
+        font-size: 15px;
+        padding: 0px 35px 10px 35px;
+        margin-bottom: 70px;
+        text-align: center;
+        line-height: 30px; }
+        .seccionSegundoMenu .menuCuatro .cuatroTxt p a {
+          text-decoration: none;
+          color: #8b3636;
+          letter-spacing: 1px;
+          font-weight: bold; }
+        .seccionSegundoMenu .menuCuatro .cuatroTxt p a:hover {
+          color: white;
+          text-shadow: 2px 2px 2px black; }
+  .seccionSegundoMenu .menuCinco {
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%; }
+    .seccionSegundoMenu .menuCinco .cincoTxt {
+      width: 100%;
+      height: 100%;
+      background: #6cb9be;
+      border-right: 0.1px solid #838383;
+      border-top: 0.1px solid #838383;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .seccionSegundoMenu .menuCinco .cincoTxt h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 35px;
+        padding-bottom: 60px;
+        padding-top: 40px;
+        text-shadow: 2px 2px 2px white;
+        letter-spacing: 3px;
+        font-style: italic; }
+      .seccionSegundoMenu .menuCinco .cincoTxt p {
+        font-size: 15px;
+        padding: 0px 35px 10px 35px;
+        margin-bottom: 70px;
+        text-align: center;
+        line-height: 30px; }
+        .seccionSegundoMenu .menuCinco .cincoTxt p a {
+          text-decoration: none;
+          color: #8b3636;
+          letter-spacing: 1px;
+          font-weight: bold; }
+        .seccionSegundoMenu .menuCinco .cincoTxt p a:hover {
+          color: white;
+          text-shadow: 2px 2px 2px black; }
+  .seccionSegundoMenu .contImg {
+    overflow: hidden; }
+    .seccionSegundoMenu .contImg .tresFoto {
+      width: 100%;
+      height: 100%;
+      background: url(../media/sobremi.jpeg);
+      background-position: 50% 40%;
+      background-repeat: no-repeat;
+      filter: grayscale(100%);
+      background-size: cover;
+      transition: all 1.5s; }
+    .seccionSegundoMenu .contImg .cuatroFoto {
+      width: 100%;
+      height: 100%;
+      background: url(../media/contactame.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: grayscale(100%);
+      background-size: cover;
+      transition: all 1.5s; }
+    .seccionSegundoMenu .contImg .cincoFoto {
+      width: 100%;
+      height: 100%;
+      background: url(../media/pideclase.jpeg);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      filter: grayscale(100%);
+      background-size: cover;
+      transition: all 1.5s; }
+  .seccionSegundoMenu .tresFoto:hover,
+  .seccionSegundoMenu .cuatroFoto:hover,
+  .seccionSegundoMenu .cincoFoto:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1); }
+
+/* Sección Clases */
+.galeriaClases {
+  height: 820px;
+  width: 100%;
+  padding-bottom: 30px;
+  background: linear-gradient(to bottom, #d8f8f3, #b2e2db);
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .galeriaClases h1 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding-top: 60px;
+    letter-spacing: 2px; }
+  .galeriaClases p {
+    padding: 20px;
+    text-align: center; }
+  .galeriaClases .contBot {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%; }
+    .galeriaClases .contBot .botonesClase {
+      width: 100%;
+      transition: all 0.3s ease;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      .galeriaClases .contBot .botonesClase .botonUno {
+        width: 300px;
+        height: 500px;
+        transition: all 0.8s ease;
+        margin-left: 20px; }
+        .galeriaClases .contBot .botonesClase .botonUno .botonOne {
+          width: 100%;
+          height: 100%;
+          background-image: url(../media/clase1.jpeg);
+          background-size: cover;
+          background-position: center;
+          transition: all 0.8s ease;
+          font-size: 30px;
+          font-family: "Poppins", sans-serif;
+          font-weight: bold;
+          text-shadow: 2px 2px 2px black;
+          letter-spacing: 2px;
+          padding-bottom: 250px; }
+      .galeriaClases .contBot .botonesClase .botonDos {
+        width: 300px;
+        height: 500px;
+        transition: all 0.8s ease; }
+        .galeriaClases .contBot .botonesClase .botonDos .botonTwo {
+          width: 100%;
+          height: 100%;
+          background-image: url(../media/clase2.jpeg);
+          background-size: cover;
+          background-position: center;
+          transition: all 0.8s ease;
+          font-size: 30px;
+          font-family: "Poppins", sans-serif;
+          font-weight: bold;
+          text-shadow: 2px 2px 2px black;
+          letter-spacing: 2px;
+          padding-bottom: 180px; }
+      .galeriaClases .contBot .botonesClase .botonTres {
+        width: 300px;
+        height: 500px;
+        transition: all 0.8s ease;
+        margin-right: 20px; }
+        .galeriaClases .contBot .botonesClase .botonTres .botonThree {
+          width: 100%;
+          height: 100%;
+          background-image: url(../media/clase3.jpeg);
+          background-size: cover;
+          background-position: center;
+          transition: all 0.8s ease;
+          font-size: 30px;
+          font-family: "Poppins", sans-serif;
+          font-weight: bold;
+          text-shadow: 2px 2px 2px black;
+          letter-spacing: 2px;
+          padding-bottom: 250px; }
+  .galeriaClases .botonesClase:hover .botonUno {
+    transform: scale(1.1);
+    opacity: 0.8; }
+  .galeriaClases .botonesClase:hover .botonDos {
+    transform: scale(1.1);
+    opacity: 0.8; }
+  .galeriaClases .botonesClase:hover .botonTres {
+    transform: scale(1.1);
+    opacity: 0.8; }
+  .galeriaClases .popupMedida {
+    height: 700px;
+    width: 800px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .galeriaClases .popupMedida .popTitUno {
+      transform: translate(80%); }
+    .galeriaClases .popupMedida .popTitDos {
+      transform: translate(10%); }
+    .galeriaClases .popupMedida .popTitTres {
+      transform: translate(65%); }
+    .galeriaClases .popupMedida h5 {
+      font-family: "Poppins", sans-serif;
+      font-size: 30px;
+      letter-spacing: 2px;
+      font-style: italic; }
+    .galeriaClases .popupMedida .contenidoPopup {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100%; }
+      .galeriaClases .popupMedida .contenidoPopup p {
+        width: 300px;
+        letter-spacing: 0.5px;
+        font-size: 20px;
+        padding-top: 50px; }
+      .galeriaClases .popupMedida .contenidoPopup .popup {
+        height: 600px;
+        width: 450px; }
+        .galeriaClases .popupMedida .contenidoPopup .popup .popupCont {
+          width: 100%;
+          height: 100%; }
+          .galeriaClases .popupMedida .contenidoPopup .popup .popupCont img {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; }
+
+/* Sección Talleres */
+.galeriaTalleres {
+  height: 820px;
+  width: 100%;
+  padding-bottom: 30px;
+  background: linear-gradient(to bottom, #d8f8f3, #b2e2db);
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .galeriaTalleres h1 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding-top: 60px;
+    letter-spacing: 2px;
+    font-style: italic; }
+  .galeriaTalleres p {
+    padding: 20px;
+    text-align: center; }
+  .galeriaTalleres .conttBot {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%; }
+    .galeriaTalleres .conttBot .botonesTaller {
+      width: 100%;
+      transition: all 0.3s ease;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      .galeriaTalleres .conttBot .botonesTaller .botUno {
+        width: 300px;
+        height: 500px;
+        margin-left: 0px;
+        transition: all 0.8s ease;
+        margin-left: 20px; }
+        .galeriaTalleres .conttBot .botonesTaller .botUno .botOne {
+          width: 100%;
+          height: 100%;
+          background-image: url(../media/taller1.jpeg);
+          background-size: cover;
+          background-position: center;
+          transition: all 0.8s ease;
+          font-size: 30px;
+          font-family: "Poppins", sans-serif;
+          font-weight: bold;
+          text-shadow: 2px 2px 2px black;
+          letter-spacing: 2px; }
+      .galeriaTalleres .conttBot .botonesTaller .botDos {
+        width: 300px;
+        height: 500px;
+        margin-left: 0px;
+        transition: all 0.8s ease; }
+        .galeriaTalleres .conttBot .botonesTaller .botDos .botTwo {
+          width: 100%;
+          height: 100%;
+          background-image: url(../media/taller2.jpeg);
+          background-size: cover;
+          background-position-x: 70%;
+          transition: all 0.8s ease;
+          font-size: 30px;
+          font-family: "Poppins", sans-serif;
+          font-weight: bold;
+          text-shadow: 2px 2px 2px black;
+          letter-spacing: 2px; }
+      .galeriaTalleres .conttBot .botonesTaller .botTres {
+        width: 300px;
+        height: 500px;
+        margin-left: 0px;
+        transition: all 0.8s ease;
+        margin-right: 20px; }
+        .galeriaTalleres .conttBot .botonesTaller .botTres .botThree {
+          width: 100%;
+          height: 100%;
+          background-image: url(../media/taller3.jpeg);
+          background-size: cover;
+          background-position-x: 35%;
+          transition: all 0.8s ease;
+          font-size: 30px;
+          font-family: "Poppins", sans-serif;
+          font-weight: bold;
+          text-shadow: 2px 2px 2px black;
+          letter-spacing: 2px; }
+  .galeriaTalleres .botonesTaller:hover .botUno {
+    transform: scale(1.1);
+    opacity: 0.8; }
+  .galeriaTalleres .botonesTaller:hover .botDos {
+    transform: scale(1.1);
+    opacity: 0.8; }
+  .galeriaTalleres .botonesTaller:hover .botTres {
+    transform: scale(1.1);
+    opacity: 0.8; }
+  .galeriaTalleres .popupMedida {
+    height: 500px;
+    width: 900px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .galeriaTalleres .popupMedida .popTitCuatro {
+      transform: translate(40%); }
+    .galeriaTalleres .popupMedida .popTitCinco {
+      transform: translate(120%); }
+    .galeriaTalleres .popupMedida .popTitSeis {
+      transform: translate(65%); }
+    .galeriaTalleres .popupMedida h5 {
+      font-family: "Poppins", sans-serif;
+      font-size: 30px;
+      letter-spacing: 2px;
+      font-style: italic; }
+    .galeriaTalleres .popupMedida .contenPopup {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100%; }
+      .galeriaTalleres .popupMedida .contenPopup p {
+        width: 250px;
+        letter-spacing: 0.5px;
+        font-size: 20px;
+        padding-top: 50px; }
+      .galeriaTalleres .popupMedida .contenPopup .popTxt {
+        font-size: 18px;
+        padding: 0; }
+      .galeriaTalleres .popupMedida .contenPopup .popup {
+        height: 386px;
+        width: 600px; }
+        .galeriaTalleres .popupMedida .contenPopup .popup .popupCont {
+          width: 100%;
+          height: 100%; }
+          .galeriaTalleres .popupMedida .contenPopup .popup .popupCont img {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; }
+
+/* Sección Newsletter */
+.newsletter {
+  background: #caf4f7;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .newsletter h2 {
+    text-align: center;
+    padding: 15px 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-style: italic; }
+  .newsletter .cajaInput {
+    display: flex;
+    justify-content: center; }
+    .newsletter .cajaInput .newsMail {
+      width: 400px;
+      height: 35px;
+      margin-right: 10px;
+      padding-left: 10px;
+      border: 0.1px solid #919090;
+      font-family: "Poppins", sans-serif; }
+    .newsletter .cajaInput .newsMail:focus {
+      outline-style: solid;
+      outline-color: #87bdb7;
+      outline-width: 3px;
+      border: #87bdb7; }
+    .newsletter .cajaInput .newsBoton {
+      width: 90px;
+      height: 35px;
+      background: white;
+      border: 0.1px solid #919090;
+      font-style: italic;
+      font-size: 15px;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      font-family: "Poppins", sans-serif;
+      border-radius: 10px; }
+    .newsletter .cajaInput .newsBoton:hover {
+      background: #36beb1;
+      color: white; }
+
+/* Sección Footer */
+footer {
+  background: #87bdb7;
+  height: 230px; }
+  footer .piePagina {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 40px; }
+    footer .piePagina h2 {
+      font-family: "Poppins", sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      font-style: italic; }
+    footer .piePagina .sec1 img {
+      width: 160px;
+      padding-top: 40px; }
+    footer .piePagina .sec2 {
+      height: 100%;
+      width: 15%;
+      padding-top: 20px; }
+      footer .piePagina .sec2 ul {
+        margin-top: 20px; }
+        footer .piePagina .sec2 ul li {
+          margin: 10px 0px 0px 10px;
+          font-size: 15px;
+          line-height: 20px; }
+      footer .piePagina .sec2 a {
+        color: black;
+        font-size: 15px;
+        text-decoration: none; }
+      footer .piePagina .sec2 a:hover {
+        color: white; }
+    footer .piePagina .sec3 {
+      height: 100%;
+      width: 15%;
+      padding: 20px 0px 0px 20px; }
+      footer .piePagina .sec3 ul {
+        margin-top: 20px; }
+        footer .piePagina .sec3 ul li {
+          margin: 10px 0px 0px 10px;
+          font-size: 15px;
+          line-height: 20px; }
+      footer .piePagina .sec3 a {
+        color: black;
+        font-size: 15px;
+        text-decoration: none; }
+      footer .piePagina .sec3 a:hover {
+        color: white; }
+    footer .piePagina .sec4 {
+      height: 100%;
+      width: 15%;
+      padding: 20px 0px 0px 10px; }
+      footer .piePagina .sec4 ul {
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        grid-template-rows: 50px; }
+        footer .piePagina .sec4 ul li {
+          list-style: none; }
+        footer .piePagina .sec4 ul a {
+          width: 30px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          transition: all 0.5s ease;
+          border-radius: 5px;
+          margin-top: 20px; }
+          footer .piePagina .sec4 ul a .fa {
+            color: black;
+            font-size: 30px; }
+        footer .piePagina .sec4 ul a:hover > .fa {
+          color: white; }
+  footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    background: #1b1b1b; }
+    footer .copyright p {
+      font-size: 15px;
+      padding-top: 15px;
+      color: whitesmoke; }
+
+/* Sección Sobre Mi */
+.sobreMi {
+  background: linear-gradient(to bottom, white 0%, #ebf7f5 20%, #e2f5f2 40%, #d2f7f1 60%, #c1f3eb 80%, #b5f3e9 100%);
+  height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%; }
+  .sobreMi .sobreImagen {
+    height: 100%;
+    width: 100%;
+    background-image: url(../media/sobremi.jpeg);
+    background-size: cover;
+    background-position-y: 50%; }
+  .sobreMi .sobreTexto {
+    height: 100%;
+    width: 100%; }
+    .sobreMi .sobreTexto h1 {
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      letter-spacing: 2px;
+      padding: 40px 0;
+      font-style: italic; }
+    .sobreMi .sobreTexto p {
+      text-align: left;
+      font-size: 18px;
+      letter-spacing: 1px;
+      padding: 20px; }
+
+/* Seccion Contactame */
+.imgContacto {
+  background-image: url("../media/contactame.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  margin-bottom: 20vh; }
+
+.formularioContacto {
+  background: linear-gradient(to bottom, white 0%, #ebf7f5 20%, #e2f5f2 40%, #d2f7f1 60%, #c1f3eb 80%, #b5f3e9 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20vh; }
+  .formularioContacto .formulario {
+    background: linear-gradient(to bottom, white, #faf9f9);
+    height: 1100px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 3px solid gray;
+    border-radius: 15px;
+    overflow: hidden; }
+    .formularioContacto .formulario h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      font-family: "Poppins", sans-serif;
+      letter-spacing: 4px;
+      font-style: italic; }
+    .formularioContacto .formulario p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 13px;
+      margin-top: 30px; }
+    .formularioContacto .formulario span {
+      color: red; }
+    .formularioContacto .formulario .formNom {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 20px;
+      margin-left: 20px; }
+      .formularioContacto .formulario .formNom input[type="text"] {
+        margin-top: 10px;
+        height: 35px;
+        width: 705px;
+        padding-left: 10px;
+        font-family: "Poppins", sans-serif; }
+      .formularioContacto .formulario .formNom input[type="text"]:focus {
+        outline-style: solid;
+        outline-color: #87bdb7;
+        outline-width: 3px;
+        border: #87bdb7;
+        padding: 10px; }
+    .formularioContacto .formulario .formTel {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 20px;
+      margin-left: 20px; }
+      .formularioContacto .formulario .formTel input[type="number"] {
+        margin-top: 10px;
+        height: 35px;
+        width: 705px;
+        padding-left: 10px;
+        font-family: "Poppins", sans-serif; }
+      .formularioContacto .formulario .formTel input[type="number"]:focus {
+        outline-style: solid;
+        outline-color: #87bdb7;
+        outline-width: 3px;
+        border: #87bdb7;
+        padding: 10px; }
+    .formularioContacto .formulario .formEm {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 20px;
+      margin-left: 20px; }
+      .formularioContacto .formulario .formEm input[type="email"] {
+        margin-top: 10px;
+        height: 35px;
+        width: 705px;
+        padding-left: 10px;
+        font-family: "Poppins", sans-serif; }
+      .formularioContacto .formulario .formEm input[type="email"]:focus {
+        outline-style: solid;
+        outline-color: #87bdb7;
+        outline-width: 3px;
+        border: #87bdb7;
+        padding: 10px; }
+    .formularioContacto .formulario .formPais {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 20px;
+      margin-left: 20px; }
+      .formularioContacto .formulario .formPais select[name="pais"] {
+        margin-top: 10px;
+        height: 35px;
+        width: 300px;
+        font-family: "Poppins", sans-serif;
+        padding-left: 10px; }
+    .formularioContacto .formulario .formMen {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 20px;
+      margin-left: 20px; }
+      .formularioContacto .formulario .formMen textarea[name="mensaje"] {
+        width: 705px;
+        height: 120px;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-top: 10px;
+        font-family: "Poppins", sans-serif; }
+      .formularioContacto .formulario .formMen textarea[name="mensaje"]:focus {
+        outline-style: solid;
+        outline-color: #87bdb7;
+        outline-width: 3px;
+        border: #87bdb7;
+        padding: 10px; }
+    .formularioContacto .formulario .formBoton {
+      display: grid;
+      justify-content: center; }
+      .formularioContacto .formulario .formBoton input[type="submit"] {
+        width: 200px;
+        height: 35px;
+        margin: 10px 0px 30px 0px;
+        background: white;
+        border: 0.1px solid #919090;
+        font-style: italic;
+        font-size: 15px;
+        letter-spacing: 1px;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        font-family: "Poppins", sans-serif;
+        border-radius: 10px; }
+      .formularioContacto .formulario .formBoton input[type="submit"]:hover {
+        background: #36beb1;
+        color: white; }
+
+/* Sección Pide Clase */
+.formularioClase {
+  background: linear-gradient(to bottom, white 0%, #ebf7f5 20%, #e2f5f2 40%, #d2f7f1 60%, #c1f3eb 80%, #b5f3e9 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 20vh; }
+  .formularioClase .videoEntrada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8vh 0px 8vh 0px;
+    height: 315px; }
+    .formularioClase .videoEntrada .videoCont {
+      height: 100%;
+      box-shadow: 10px 10px 15px #8c9191; }
+  .formularioClase .tituloClase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; }
+  .formularioClase p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 100px; }
+  .formularioClase .claseGratis {
+    background: linear-gradient(to bottom, white, #faf9f9);
+    height: 1300px;
+    width: 950px;
+    margin-top: 20px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 3px solid #856514;
+    border-radius: 15px; }
+    .formularioClase .claseGratis .claseTitulo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Poppins", sans-serif;
+      margin: 10px 0px 15px 0px;
+      letter-spacing: 3px;
+      font-style: italic; }
+    .formularioClase .claseGratis span {
+      color: red; }
+    .formularioClase .claseGratis .claseNom {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 20px;
+      margin-left: 20px;
+      font-size: 18px; }
+      .formularioClase .claseGratis .claseNom input[type="text"] {
+        margin-top: 10px;
+        height: 35px;
+        width: 860px;
+        padding-left: 10px;
+        font-family: "Poppins", sans-serif; }
+      .formularioClase .claseGratis .claseNom input[type="text"]:focus {
+        outline-style: solid;
+        outline-color: #87bdb7;
+        outline-width: 3px;
+        border: #87bdb7;
+        padding: 10px; }
+    .formularioClase .claseGratis .claseApe {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 20px;
+      margin-left: 20px;
+      font-size: 18px; }
+      .formularioClase .claseGratis .claseApe input[type="text"] {
+        margin-top: 10px;
+        height: 35px;
+        width: 860px;
+        padding-left: 10px;
+        font-family: "Poppins", sans-serif; }
+      .formularioClase .claseGratis .claseApe input[type="text"]:focus {
+        outline-style: solid;
+        outline-color: #87bdb7;
+        outline-width: 3px;
+        border: #87bdb7;
+        padding: 10px; }
+    .formularioClase .claseGratis .claseTel {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 20px;
+      margin-left: 20px;
+      font-size: 18px; }
+      .formularioClase .claseGratis .claseTel input[type="number"] {
+        margin-top: 10px;
+        height: 35px;
+        width: 860px;
+        padding-left: 10px;
+        font-family: "Poppins", sans-serif; }
+      .formularioClase .claseGratis .claseTel input[type="number"]:focus {
+        outline-style: solid;
+        outline-color: #87bdb7;
+        outline-width: 3px;
+        border: #87bdb7;
+        padding: 10px; }
+    .formularioClase .claseGratis .claseEm {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 20px;
+      margin-left: 20px;
+      font-size: 18px; }
+      .formularioClase .claseGratis .claseEm input[type="email"] {
+        margin-top: 10px;
+        height: 35px;
+        width: 860px;
+        padding-left: 10px;
+        font-family: "Poppins", sans-serif; }
+      .formularioClase .claseGratis .claseEm input[type="email"]:focus {
+        outline-style: solid;
+        outline-color: #87bdb7;
+        outline-width: 3px;
+        border: #87bdb7;
+        padding: 10px; }
+    .formularioClase .claseGratis .clasePais {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 20px;
+      margin-left: 20px;
+      font-size: 18px; }
+      .formularioClase .claseGratis .clasePais select[name="pais"] {
+        margin-top: 10px;
+        height: 35px;
+        width: 300px;
+        padding-left: 10px;
+        font-family: "Poppins", sans-serif; }
+    .formularioClase .claseGratis .clasePreg1 {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 20px;
+      margin-left: 20px;
+      font-size: 18px; }
+      .formularioClase .claseGratis .clasePreg1 textarea[name="pregunta1"] {
+        margin-top: 10px;
+        padding: 10px;
+        width: 860px;
+        font-family: "Poppins", sans-serif; }
+      .formularioClase .claseGratis .clasePreg1 textarea[name="pregunta1"]:focus {
+        outline-style: solid;
+        outline-color: #87bdb7;
+        outline-width: 3px;
+        border: #87bdb7;
+        padding: 10px; }
+    .formularioClase .claseGratis .clasePreg2 {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 20px;
+      margin-left: 20px;
+      font-size: 18px; }
+      .formularioClase .claseGratis .clasePreg2 textarea[name="pregunta2"] {
+        margin-top: 10px;
+        padding: 10px;
+        width: 860px;
+        font-family: "Poppins", sans-serif; }
+      .formularioClase .claseGratis .clasePreg2 textarea[name="pregunta2"]:focus {
+        outline-style: solid;
+        outline-color: #87bdb7;
+        outline-width: 3px;
+        border: #87bdb7;
+        padding: 10px; }
+    .formularioClase .claseGratis .claseBoton {
+      display: grid;
+      justify-content: center; }
+      .formularioClase .claseGratis .claseBoton input[type="submit"] {
+        width: 200px;
+        height: 35px;
+        margin: 10px 0px 30px 0px;
+        background: white;
+        border: 0.1px solid #919090;
+        font-style: italic;
+        font-size: 15px;
+        letter-spacing: 1px;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        font-family: "Poppins", sans-serif;
+        border-radius: 10px; }
+      .formularioClase .claseGratis .claseBoton input[type="submit"]:hover {
+        background: #36beb1;
+        color: white; }
+
+/* Seccion Botones Social */
+.contSocial {
+  position: sticky;
+  z-index: 80; }
+
+.botonesSocial {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 300px;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  z-index: 80; }
+
+/* Boton */
+.icon-button {
+  border-radius: 3.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  height: 3.6rem;
+  line-height: 3.6rem;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 3.6rem;
+  transform: scale(0.75); }
+
+.whats {
+  background-color: rgba(37, 211, 101, 0.5); }
+
+.insta {
+  background-color: rgba(54, 54, 54, 0.5); }
+
+.face {
+  background-color: rgba(59, 89, 152, 0.5); }
+
+/*.mail {
+  background-color: rgba(207, 39, 39, 0.5);
+}*/
+/* Circulo */
+.icon-button span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0; }
+
+.icon-button:hover span {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 3.6rem;
+  margin: -1.8rem; }
+
+.whats span {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.insta span {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.face span {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+/*.mail span {
+  background-color: rgba(255, 255, 255, 0.8);
+}*/
+/* Iconos */
+.icon-button i {
+  background: none;
+  color: white;
+  height: 3.6rem;
+  left: 0;
+  line-height: 3.6rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 3.6rem;
+  z-index: 50; }
+
+.icon-button .icon-whats {
+  color: white; }
+
+.icon-button .icon-insta {
+  color: white; }
+
+.icon-button .icon-face {
+  color: white; }
+
+/*.icon-button .icon-mail {
+  color: white;
+}*/
+/* Animacion */
+.icon-button:hover .icon-whats {
+  color: #25d366; }
+
+.icon-button:hover .icon-insta {
+  color: #363636; }
+
+.icon-button:hover .icon-face {
+  color: #3b5998; }
+
+/*.icon-button:hover .icon-mail {
+  color: rgb(207, 39, 39);
+}*/
+/* Responsive */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Seccion Primer Menu */
+  .seccionPrimerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 900px; }
+    .seccionPrimerMenu .menuUno {
+      margin: 10px 0px 5px 0px; }
+      .seccionPrimerMenu .menuUno .frontTxt h1 {
+        font-size: 30px;
+        margin-left: 20px;
+        text-shadow: 1px 1px 1px white; }
+    .seccionPrimerMenu .menuDos {
+      margin: 5px 0px 10px 0px; }
+      .seccionPrimerMenu .menuDos .frontTxt h1 {
+        font-size: 30px;
+        margin-left: 20px;
+        text-shadow: 1px 1px 1px white; }
+  /* Seccion Segundo Menu */
+  .seccionSegundoMenu .tresTxt h1 {
+    font-size: 30px !important;
+    margin-top: 120px;
+    padding-top: 60px !important; }
+  .seccionSegundoMenu .tresTxt p {
+    font-size: 13px !important;
+    margin-bottom: 140px !important;
+    padding-bottom: 80px !important; }
+  .seccionSegundoMenu .cuatroTxt h1 {
+    font-size: 30px !important;
+    margin-top: 120px;
+    padding-top: 60px !important; }
+  .seccionSegundoMenu .cuatroTxt p {
+    font-size: 13px !important;
+    margin-bottom: 140px !important;
+    padding-bottom: 80px !important; }
+  .seccionSegundoMenu .cincoTxt h1 {
+    font-size: 30px !important;
+    margin-top: 120px;
+    padding-top: 60px !important; }
+  .seccionSegundoMenu .cincoTxt p {
+    font-size: 13px !important;
+    margin-bottom: 140px !important;
+    padding-bottom: 80px !important; }
+  /* Seccion Clases */
+  .galeriaClases .botonUno {
+    width: 280px !important;
+    height: 480px !important; }
+    .galeriaClases .botonUno .botonOne {
+      font-size: 25px !important; }
+  .galeriaClases .botonDos {
+    width: 280px !important;
+    height: 480px !important; }
+    .galeriaClases .botonDos .botonTwo {
+      font-size: 25px !important; }
+  .galeriaClases .botonTres {
+    width: 280px !important;
+    height: 480px !important; }
+    .galeriaClases .botonTres .botonThree {
+      font-size: 25px !important; }
+  /* Seccion Talleres */
+  .galeriaTalleres .botUno {
+    width: 280px !important;
+    height: 480px !important; }
+    .galeriaTalleres .botUno .botOne {
+      font-size: 25px !important; }
+  .galeriaTalleres .botDos {
+    width: 280px !important;
+    height: 480px !important; }
+    .galeriaTalleres .botDos .botTwo {
+      font-size: 25px !important; }
+  .galeriaTalleres .botTres {
+    width: 280px !important;
+    height: 480px !important; }
+    .galeriaTalleres .botTres .botThree {
+      font-size: 25px !important; }
+  /*Seccion Sobre Mi*/
+  .sobreMi .sobreTexto p {
+    font-size: 17px; } }
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  /* Seccion Header */
+  header .opcionesNav ul li {
+    display: flex;
+    align-items: center; }
+    header .opcionesNav ul li .hov {
+      text-align: center; } }
+
+@media (min-width: 997px) and (max-width: 1024px) {
+  /* Seccion Testimonios */
+  .secTest {
+    height: 500px !important; } }
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* Seccion Primer Menu */
+  .seccionPrimerMenu {
+    height: 800px; }
+    .seccionPrimerMenu .menuUno {
+      width: 550px;
+      height: 350px;
+      margin-right: 20px; }
+      .seccionPrimerMenu .menuUno .frontTxt h1 {
+        font-size: 25px;
+        margin-left: 20px;
+        text-shadow: 1px 1px 1px white; }
+    .seccionPrimerMenu .menuDos {
+      width: 550px;
+      height: 350px;
+      margin-right: 20px; }
+      .seccionPrimerMenu .menuDos .frontTxt h1 {
+        font-size: 25px;
+        margin-left: 20px;
+        text-shadow: 1px 1px 1px white; }
+    .seccionPrimerMenu .back p {
+      margin-top: 50px;
+      padding: 0px 30px 0px 30px; }
+    .seccionPrimerMenu .btn {
+      margin-top: 250px; }
+  /* Seccion Testimonios*/
+  .secTest {
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .secTest .secTest__contenedor {
+      margin: 20px; }
+  /* Seccion Segundo Menu */
+  .seccionSegundoMenu .tresTxt h1 {
+    font-size: 25px !important;
+    margin-top: 160px;
+    padding-top: 80px !important; }
+  .seccionSegundoMenu .tresTxt p {
+    font-size: 12px !important;
+    margin-bottom: 180px !important;
+    padding-bottom: 80px !important;
+    line-height: 25px !important; }
+  .seccionSegundoMenu .cuatroTxt h1 {
+    font-size: 25px !important;
+    margin-top: 160px;
+    padding-top: 80px !important; }
+  .seccionSegundoMenu .cuatroTxt p {
+    font-size: 12px !important;
+    margin-bottom: 180px !important;
+    padding-bottom: 80px !important;
+    line-height: 25px !important; }
+  .seccionSegundoMenu .cincoTxt h1 {
+    font-size: 25px !important;
+    margin-top: 160px;
+    padding-top: 80px !important; }
+  .seccionSegundoMenu .cincoTxt p {
+    font-size: 12px !important;
+    margin-bottom: 180px !important;
+    padding-bottom: 80px !important;
+    line-height: 25px !important; }
+  /* Seccion Clases */
+  .galeriaClases {
+    height: 720px; }
+    .galeriaClases .contBot .botonesClase {
+      width: 250px;
+      height: 400px; }
+      .galeriaClases .contBot .botonesClase .botonUno {
+        width: 250px;
+        height: 400px;
+        margin: 20px; }
+        .galeriaClases .contBot .botonesClase .botonUno .botonOne {
+          font-size: 18px; }
+      .galeriaClases .contBot .botonesClase .botonDos {
+        width: 250px;
+        height: 400px;
+        margin: 20px; }
+        .galeriaClases .contBot .botonesClase .botonDos .botonTwo {
+          font-size: 18px; }
+      .galeriaClases .contBot .botonesClase .botonTres {
+        width: 250px;
+        height: 400px;
+        margin: 20px; }
+        .galeriaClases .contBot .botonesClase .botonTres .botonThree {
+          font-size: 18px; }
+    .galeriaClases .popupMedida {
+      width: 700px;
+      height: 615px;
+      margin-left: 5px; }
+      .galeriaClases .popupMedida .contenidoPopup .popup {
+        width: 400px;
+        height: 533px; }
+      .galeriaClases .popupMedida .contenidoPopup p {
+        font-size: 18px;
+        width: 260px;
+        padding-top: 20px; }
+      .galeriaClases .popupMedida .popTitUno {
+        font-size: 20px;
+        transform: translate(120%); }
+      .galeriaClases .popupMedida .popTitDos {
+        font-size: 20px;
+        transform: translate(20%); }
+      .galeriaClases .popupMedida .popTitTres {
+        font-size: 20px;
+        transform: translate(100%); }
+  /* Seccion Talleres */
+  .galeriaTalleres {
+    height: 720px; }
+    .galeriaTalleres .conttBot .botonesTaller {
+      width: 250px;
+      height: 400px; }
+      .galeriaTalleres .conttBot .botonesTaller .botUno {
+        width: 250px;
+        height: 400px;
+        margin: 20px; }
+        .galeriaTalleres .conttBot .botonesTaller .botUno .botOne {
+          font-size: 18px; }
+      .galeriaTalleres .conttBot .botonesTaller .botDos {
+        width: 250px;
+        height: 400px;
+        margin: 20px; }
+        .galeriaTalleres .conttBot .botonesTaller .botDos .botTwo {
+          font-size: 18px; }
+      .galeriaTalleres .conttBot .botonesTaller .botTres {
+        width: 250px;
+        height: 400px;
+        margin: 20px; }
+        .galeriaTalleres .conttBot .botonesTaller .botTres .botThree {
+          font-size: 18px; }
+    .galeriaTalleres .popupMedida {
+      width: 700px;
+      height: 650px;
+      margin-left: 5px; }
+      .galeriaTalleres .popupMedida .contenPopup {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 0.3fr; }
+        .galeriaTalleres .popupMedida .contenPopup p {
+          font-size: 18px;
+          width: 100%;
+          padding-top: 20px; }
+        .galeriaTalleres .popupMedida .contenPopup .popTxt {
+          font-size: 16px; }
+        .galeriaTalleres .popupMedida .contenPopup .popup {
+          width: 700px;
+          height: 450px; }
+      .galeriaTalleres .popupMedida .popTitCuatro {
+        font-size: 20px;
+        transform: translate(45%); }
+      .galeriaTalleres .popupMedida .popTitCinco {
+        font-size: 20px;
+        transform: translate(120%); }
+      .galeriaTalleres .popupMedida .popTitSeis {
+        font-size: 20px;
+        transform: translate(70%); }
+  /* Seccion Contactame */
+  .formularioContacto .formulario {
+    width: 700px; }
+    .formularioContacto .formulario .formNom input[type="text"] {
+      width: 615px; }
+    .formularioContacto .formulario .formTel input[type="number"] {
+      width: 615px; }
+    .formularioContacto .formulario .formEm input[type="email"] {
+      width: 615px; }
+    .formularioContacto .formulario .formMen textarea[name="mensaje"] {
+      width: 615px; }
+  /* Seccion Pide Clase */
+  .formularioClase .claseGratis {
+    width: 700px; }
+    .formularioClase .claseGratis .claseNom input[type="text"] {
+      width: 615px; }
+    .formularioClase .claseGratis .claseApe input[type="text"] {
+      width: 615px; }
+    .formularioClase .claseGratis .claseTel input[type="number"] {
+      width: 615px; }
+    .formularioClase .claseGratis .claseEm input[type="email"] {
+      width: 615px; }
+    .formularioClase .claseGratis .clasePreg1 textarea[name="pregunta1"] {
+      width: 615px; }
+    .formularioClase .claseGratis .clasePreg2 textarea[name="pregunta2"] {
+      width: 615px; }
+  /* Seccion Footer */
+  footer {
+    height: 280px; }
+    footer .piePagina {
+      padding-bottom: 100px; }
+      footer .piePagina .sec1 {
+        padding-top: 40px; }
+      footer .piePagina .sec2 h2 {
+        font-size: 18px; }
+      footer .piePagina .sec3 h2 {
+        font-size: 18px; }
+      footer .piePagina .sec4 h2 {
+        font-size: 20px !important;
+        margin: 0px 0px 0px 10px !important;
+        font-weight: bold; }
+      footer .piePagina .sec4 ul {
+        display: grid !important;
+        grid-template-columns: 30px !important;
+        grid-template-rows: 30px 30px 30px !important;
+        padding-left: 25px; }
+        footer .piePagina .sec4 ul li {
+          margin-left: 15px; }
+          footer .piePagina .sec4 ul li a {
+            width: 20px;
+            height: 20px;
+            margin: 20px 20px 20px 0px; }
+            footer .piePagina .sec4 ul li a .fa {
+              font-size: 27px;
+              margin: 20px; }
+  /*Seccion Sobre Mi*/
+  .sobreMi .sobreTexto h1 {
+    font-size: 30px; }
+  .sobreMi .sobreTexto p {
+    font-size: 15px; }
+  .sobreMi .sobreImagen {
+    background-position-x: 50%; } }
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Seccion Primer Menu */
+  .seccionPrimerMenu {
+    height: 750px; }
+    .seccionPrimerMenu .menuUno {
+      width: 450px;
+      height: 280px;
+      margin-right: 15px; }
+      .seccionPrimerMenu .menuUno .frontTxt h1 {
+        font-size: 25px;
+        margin-left: 10px;
+        text-shadow: 1px 1px 1px white; }
+    .seccionPrimerMenu .menuDos {
+      width: 450px;
+      height: 280px;
+      margin-right: 15px; }
+    .seccionPrimerMenu .back p {
+      margin-top: 35px;
+      font-size: 12px;
+      line-height: 25px; }
+    .seccionPrimerMenu .btn {
+      margin-top: 210px; }
+  /* Seccion Carrusel */
+  .imgOne,
+  .imgTwo {
+    height: 50vh; }
+    .imgOne h1,
+    .imgTwo h1 {
+      width: 450px;
+      font-size: 25px;
+      text-shadow: 2px 2px 2px black; }
+    .imgOne p,
+    .imgTwo p {
+      width: 450px;
+      font-size: 12px; }
+    .imgOne a,
+    .imgTwo a {
+      font-size: 12px;
+      bottom: 40px; }
+  .imgThree {
+    height: 50vh; }
+    .imgThree h1 {
+      width: 450px;
+      font-size: 17px;
+      text-shadow: 2px 2px 2px black;
+      padding: 20px 0px 0px 50px; }
+    .imgThree p {
+      width: 450px;
+      font-size: 12px; }
+    .imgThree a {
+      font-size: 12px;
+      bottom: 40px; }
+  /* Seccion Video Presentacion*/
+  .videoPresentacion {
+    height: 450px; }
+    .videoPresentacion .videoContenedor {
+      height: 240px !important; }
+      .videoPresentacion .videoContenedor iframe {
+        width: 430px;
+        height: 240px; }
+  /* Seccion Testimonios*/
+  .secTest {
+    height: 900px;
+    display: flex;
+    flex-direction: column; }
+    .secTest .secTest__contenedor {
+      margin: 20px; }
+  /* Seccion Segundo Menu */
+  .seccionSegundoMenu .menuTres {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    height: 400px; }
+    .seccionSegundoMenu .menuTres .tresTxt {
+      height: 400px;
+      border-right: none;
+      background: url(../media/sobremi.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.9;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 1fr 1fr; }
+      .seccionSegundoMenu .menuTres .tresTxt h1 {
+        font-size: 35px;
+        background: rgba(72, 181, 189, 0.7);
+        width: 100%;
+        height: 100px;
+        margin: 0 !important;
+        padding: 50px 0px 0px 0px !important;
+        text-align: center; }
+      .seccionSegundoMenu .menuTres .tresTxt p {
+        font-size: 15px;
+        background: rgba(72, 181, 189, 0.7);
+        width: 100%;
+        color: black;
+        font-weight: bolder;
+        height: 300px;
+        margin: 0 !important;
+        padding: 60px 20px 0px 20px !important;
+        text-align: center; }
+  .seccionSegundoMenu .menuCuatro {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    height: 400px; }
+    .seccionSegundoMenu .menuCuatro .cuatroTxt {
+      height: 400px;
+      border-right: none;
+      background: url(../media/contactame.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.9;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 1fr 1fr; }
+      .seccionSegundoMenu .menuCuatro .cuatroTxt h1 {
+        font-size: 35px;
+        background: rgba(132, 213, 219, 0.7);
+        width: 100%;
+        height: 100px;
+        margin: 0 !important;
+        padding: 50px 0px 0px 0px !important;
+        text-align: center; }
+      .seccionSegundoMenu .menuCuatro .cuatroTxt p {
+        font-size: 15px;
+        background: rgba(132, 213, 219, 0.7);
+        width: 100%;
+        color: black;
+        font-weight: bolder;
+        height: 300px;
+        margin: 0 !important;
+        padding: 60px 20px 0px 20px !important; }
+  .seccionSegundoMenu .menuCinco {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    height: 400px; }
+    .seccionSegundoMenu .menuCinco .cincoTxt {
+      height: 400px;
+      border-right: none;
+      background: url(../media/pideclase.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.9;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 1fr 1fr; }
+      .seccionSegundoMenu .menuCinco .cincoTxt h1 {
+        font-size: 35px;
+        background: rgba(72, 181, 189, 0.7);
+        width: 100%;
+        height: 100px;
+        margin: 0 !important;
+        padding: 50px 0px 0px 0px !important;
+        text-align: center; }
+      .seccionSegundoMenu .menuCinco .cincoTxt p {
+        font-size: 15px;
+        background: rgba(72, 181, 189, 0.7);
+        width: 100%;
+        color: black;
+        font-weight: bolder;
+        height: 300px;
+        margin: 0 !important;
+        padding: 60px 20px 0px 20px !important; }
+  .seccionSegundoMenu .contImg {
+    display: none; }
+  /* Seccion Clases */
+  .galeriaClases {
+    height: 620px; }
+    .galeriaClases h1 {
+      padding-top: 120px;
+      font-size: 25px; }
+    .galeriaClases p {
+      font-size: 15px;
+      padding-top: 40px; }
+    .galeriaClases .contBot {
+      height: 400px; }
+      .galeriaClases .contBot .botonesClase {
+        width: 180px;
+        height: 350px;
+        padding-bottom: 50px; }
+        .galeriaClases .contBot .botonesClase .botonUno {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaClases .contBot .botonesClase .botonUno .botonOne {
+            width: 100%;
+            height: 100%;
+            font-size: 13px;
+            padding-bottom: 180px; }
+        .galeriaClases .contBot .botonesClase .botonDos {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaClases .contBot .botonesClase .botonDos .botonTwo {
+            width: 100%;
+            height: 100%;
+            font-size: 13px;
+            padding-bottom: 180px; }
+        .galeriaClases .contBot .botonesClase .botonTres {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaClases .contBot .botonesClase .botonTres .botonThree {
+            width: 100%;
+            height: 100%;
+            font-size: 13px;
+            padding-bottom: 180px; }
+    .galeriaClases .popupMedida {
+      width: 600px;
+      height: 480px;
+      margin-left: 5px; }
+      .galeriaClases .popupMedida .contenidoPopup .popup {
+        width: 300px;
+        height: 400px; }
+      .galeriaClases .popupMedida .contenidoPopup p {
+        font-size: 15px;
+        width: 250px;
+        padding-top: 10px; }
+      .galeriaClases .popupMedida .popTitUno {
+        font-size: 20px;
+        transform: translate(90%); }
+      .galeriaClases .popupMedida .popTitDos {
+        font-size: 20px;
+        transform: translate(10%); }
+      .galeriaClases .popupMedida .popTitTres {
+        font-size: 20px;
+        transform: translate(70%); }
+  /* Seccion Talleres */
+  .galeriaTalleres {
+    height: 620px; }
+    .galeriaTalleres h1 {
+      padding-top: 120px;
+      font-size: 25px; }
+    .galeriaTalleres p {
+      font-size: 15px;
+      padding-top: 40px; }
+    .galeriaTalleres .conttBot {
+      height: 400px; }
+      .galeriaTalleres .conttBot .botonesTaller {
+        width: 180px;
+        height: 350px;
+        padding-bottom: 50px; }
+        .galeriaTalleres .conttBot .botonesTaller .botUno {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaTalleres .conttBot .botonesTaller .botUno .botOne {
+            width: 100%;
+            height: 100%;
+            font-size: 13px;
+            padding-bottom: 180px; }
+        .galeriaTalleres .conttBot .botonesTaller .botDos {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaTalleres .conttBot .botonesTaller .botDos .botTwo {
+            width: 100%;
+            height: 100%;
+            font-size: 13px;
+            padding-bottom: 180px; }
+        .galeriaTalleres .conttBot .botonesTaller .botTres {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaTalleres .conttBot .botonesTaller .botTres .botThree {
+            width: 100%;
+            height: 100%;
+            font-size: 13px;
+            padding-bottom: 180px; }
+    .galeriaTalleres .popupMedida {
+      width: 600px;
+      height: 640px;
+      margin-left: 5px; }
+      .galeriaTalleres .popupMedida .contenPopup {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 0.3fr; }
+        .galeriaTalleres .popupMedida .contenPopup p {
+          font-size: 18px;
+          width: 100%;
+          padding-top: 0;
+          padding-bottom: 30px; }
+        .galeriaTalleres .popupMedida .contenPopup .popTxt {
+          font-size: 14px; }
+        .galeriaTalleres .popupMedida .contenPopup .popup {
+          width: 600px;
+          height: 450px; }
+      .galeriaTalleres .popupMedida .popTitCuatro {
+        font-size: 20px;
+        transform: translate(30%); }
+      .galeriaTalleres .popupMedida .popTitCinco {
+        font-size: 20px;
+        transform: translate(100%); }
+      .galeriaTalleres .popupMedida .popTitSeis {
+        font-size: 20px;
+        transform: translate(50%); }
+  /* Sección Newsletter */
+  .newsletter .cajaInput .newsMail {
+    width: 350px; }
+  /* Seccion Footer */
+  footer {
+    height: 240px; }
+    footer .piePagina {
+      height: 100%; }
+      footer .piePagina .sec1 img {
+        width: 114.28571px !important; }
+      footer .piePagina .sec2 h2 {
+        font-size: 12px !important;
+        font-weight: bold; }
+      footer .piePagina .sec2 ul li {
+        margin-top: 5px !important;
+        line-height: 15px !important; }
+        footer .piePagina .sec2 ul li a {
+          font-size: 12px; }
+      footer .piePagina .sec3 h2 {
+        font-size: 12px !important;
+        font-weight: bold; }
+      footer .piePagina .sec3 ul li {
+        margin-top: 5px !important;
+        line-height: 15px !important; }
+        footer .piePagina .sec3 ul li a {
+          font-size: 12px; }
+      footer .piePagina .sec4 h2 {
+        font-size: 12px !important;
+        margin: 0px 0px 0px 10px !important;
+        font-weight: bold; }
+      footer .piePagina .sec4 ul {
+        display: grid !important;
+        grid-template-columns: 30px !important;
+        grid-template-rows: 30px 30px 30px !important;
+        padding-left: 25px; }
+        footer .piePagina .sec4 ul li a {
+          width: 20px;
+          height: 20px; }
+          footer .piePagina .sec4 ul li a .fa {
+            font-size: 20px; }
+  /* Seccion Contactame */
+  .formularioContacto .formulario {
+    width: 550px; }
+    .formularioContacto .formulario .formNom input[type="text"] {
+      width: 460px; }
+    .formularioContacto .formulario .formTel input[type="number"] {
+      width: 460px; }
+    .formularioContacto .formulario .formEm input[type="email"] {
+      width: 460px; }
+    .formularioContacto .formulario .formMen textarea[name="mensaje"] {
+      width: 460px; }
+  /* Seccion Pide Clase */
+  .formularioClase .videoEntrada {
+    height: 240px; }
+    .formularioClase .videoEntrada .videoCont {
+      height: 100%; }
+      .formularioClase .videoEntrada .videoCont iframe {
+        width: 430px;
+        height: 240px; }
+  .formularioClase .claseGratis {
+    width: 550px; }
+    .formularioClase .claseGratis .claseTitulo {
+      font-size: 30px; }
+    .formularioClase .claseGratis .claseNom input[type="text"] {
+      width: 460px; }
+    .formularioClase .claseGratis .claseApe input[type="text"] {
+      width: 460px; }
+    .formularioClase .claseGratis .claseTel input[type="number"] {
+      width: 460px; }
+    .formularioClase .claseGratis .claseEm input[type="email"] {
+      width: 460px; }
+    .formularioClase .claseGratis .clasePreg1 textarea[name="pregunta1"] {
+      width: 460px; }
+    .formularioClase .claseGratis .clasePreg2 textarea[name="pregunta2"] {
+      width: 460px; }
+  /* Seccion Botones Social */
+  .contSocial {
+    visibility: hidden; }
+  /*Seccion Sobre Mi*/
+  .sobreMi .sobreTexto h1 {
+    font-size: 25px; }
+  .sobreMi .sobreTexto p {
+    font-size: 13px; }
+  .sobreMi .sobreImagen {
+    background-position-x: 50%; } }
+
+@media (min-width: 577px) and (max-width: 630px) {
+  /*Seccion Sobre Mi*/
+  .sobreMi .sobreTexto h1 {
+    font-size: 25px; }
+  .sobreMi .sobreTexto p {
+    font-size: 13px; }
+  .sobreMi .sobreImagen {
+    background-position-x: 50%; }
+  /* Seccion Segundo Menu */
+  .seccionSegundoMenu .menuTres {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    height: 400px; }
+    .seccionSegundoMenu .menuTres .tresTxt {
+      height: 400px; }
+      .seccionSegundoMenu .menuTres .tresTxt h1 {
+        padding: 60px 0px 0px 0px !important;
+        text-align: center; }
+  .seccionSegundoMenu .menuCuatro {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    height: 400px; }
+    .seccionSegundoMenu .menuCuatro .cuatroTxt {
+      height: 400px; }
+      .seccionSegundoMenu .menuCuatro .cuatroTxt h1 {
+        padding: 50px 0px 0px 0px !important;
+        text-align: center; }
+  .seccionSegundoMenu .menuCinco {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    height: 400px; }
+    .seccionSegundoMenu .menuCinco .cincoTxt {
+      height: 400px; }
+      .seccionSegundoMenu .menuCinco .cincoTxt h1 {
+        padding: 50px 0px 0px 0px !important;
+        text-align: center; }
+  /* Seccion Clases */
+  .galeriaClases {
+    height: 620px; }
+    .galeriaClases h1 {
+      padding-top: 120px;
+      font-size: 25px; }
+    .galeriaClases p {
+      font-size: 15px;
+      padding-top: 40px; }
+    .galeriaClases .contBot {
+      height: 400px; }
+      .galeriaClases .contBot .botonesClase {
+        width: 180px;
+        height: 350px;
+        padding-bottom: 50px; }
+        .galeriaClases .contBot .botonesClase .botonUno {
+          width: 100% !important;
+          height: 100% !important;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaClases .contBot .botonesClase .botonUno .botonOne {
+            width: 100% !important;
+            height: 100% !important;
+            font-size: 13px;
+            padding-bottom: 180px; }
+        .galeriaClases .contBot .botonesClase .botonDos {
+          width: 95%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaClases .contBot .botonesClase .botonDos .botonTwo {
+            width: 95%;
+            height: 100%;
+            font-size: 13px;
+            padding-bottom: 180px; }
+        .galeriaClases .contBot .botonesClase .botonTres {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaClases .contBot .botonesClase .botonTres .botonThree {
+            width: 100%;
+            height: 100%;
+            font-size: 13px;
+            padding-bottom: 180px; }
+    .galeriaClases .popupMedida {
+      width: 520px;
+      height: 430px;
+      margin-left: 5px; }
+      .galeriaClases .popupMedida .contenidoPopup .popup {
+        width: 270px;
+        height: 360px; }
+      .galeriaClases .popupMedida .contenidoPopup p {
+        font-size: 13px;
+        width: 220px;
+        padding-top: 20px; }
+      .galeriaClases .popupMedida .popTitUno {
+        font-size: 18px;
+        transform: translate(80%); }
+      .galeriaClases .popupMedida .popTitDos {
+        font-size: 18px;
+        transform: translate(8%); }
+      .galeriaClases .popupMedida .popTitTres {
+        font-size: 18px;
+        transform: translate(60%); }
+  /* Seccion Talleres */
+  .galeriaTalleres {
+    height: 620px; }
+    .galeriaTalleres h1 {
+      padding-top: 120px;
+      font-size: 25px; }
+    .galeriaTalleres p {
+      font-size: 15px;
+      padding-top: 40px; }
+    .galeriaTalleres .conttBot {
+      height: 400px; }
+      .galeriaTalleres .conttBot .botonesTaller {
+        width: 180px;
+        height: 350px;
+        padding-bottom: 50px; }
+        .galeriaTalleres .conttBot .botonesTaller .botUno {
+          width: 100% !important;
+          height: 100% !important;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaTalleres .conttBot .botonesTaller .botUno .botOne {
+            width: 100% !important;
+            height: 100% !important;
+            font-size: 13px;
+            padding-bottom: 180px; }
+        .galeriaTalleres .conttBot .botonesTaller .botDos {
+          width: 95%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaTalleres .conttBot .botonesTaller .botDos .botTwo {
+            width: 95%;
+            height: 100%;
+            font-size: 13px;
+            padding-bottom: 180px; }
+        .galeriaTalleres .conttBot .botonesTaller .botTres {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaTalleres .conttBot .botonesTaller .botTres .botThree {
+            width: 100%;
+            height: 100%;
+            font-size: 13px;
+            padding-bottom: 180px; }
+    .galeriaTalleres .popupMedida {
+      width: 520px;
+      height: 540px;
+      margin-left: 5px; }
+      .galeriaTalleres .popupMedida .contenPopup {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 0.3fr; }
+        .galeriaTalleres .popupMedida .contenPopup p {
+          font-size: 15px;
+          width: 100%;
+          padding-top: 20px; }
+        .galeriaTalleres .popupMedida .contenPopup .popTxt {
+          font-size: 14px; }
+        .galeriaTalleres .popupMedida .contenPopup .popup {
+          width: 519px;
+          height: 334px; }
+      .galeriaTalleres .popupMedida .popTitCuatro {
+        font-size: 20px;
+        transform: translate(20%); }
+      .galeriaTalleres .popupMedida .popTitCinco {
+        font-size: 20px;
+        transform: translate(80%); }
+      .galeriaTalleres .popupMedida .popTitSeis {
+        font-size: 20px;
+        transform: translate(40%); }
+  /* Seccion Footer */
+  footer {
+    height: 240px !important; }
+    footer .piePagina {
+      height: 100%; }
+      footer .piePagina .sec1 img {
+        width: 114.28571px !important; }
+      footer .piePagina .sec2 h2 {
+        font-size: 12px !important; }
+      footer .piePagina .sec2 ul li {
+        margin-top: 5px !important; }
+        footer .piePagina .sec2 ul li a {
+          font-size: 12px; }
+      footer .piePagina .sec3 h2 {
+        font-size: 12px !important; }
+      footer .piePagina .sec3 ul li {
+        margin-top: 5px !important; }
+        footer .piePagina .sec3 ul li a {
+          font-size: 12px; }
+      footer .piePagina .sec4 h2 {
+        font-size: 12px !important;
+        margin: 0px 0px 0px 10px !important; }
+      footer .piePagina .sec4 ul {
+        display: grid !important;
+        grid-template-columns: 30px !important;
+        grid-template-rows: 30px 30px 30px !important;
+        padding-left: 25px; }
+        footer .piePagina .sec4 ul li a {
+          width: 20px;
+          height: 20px; }
+          footer .piePagina .sec4 ul li a .fa {
+            font-size: 20px; } }
+
+@media screen and (max-width: 576px) {
+  /* Seccion Primer Menu */
+  .seccionPrimerMenu .menuUno .frontTxt h1 {
+    font-size: 25px;
+    margin-left: 10px;
+    text-shadow: 1px 1px 1px white; }
+  .seccionPrimerMenu .menuUno .back p {
+    padding: 0px 40px 0px 40px; }
+  /* Seccion Segundo Menu */
+  .seccionSegundoMenu .menuTres {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    height: 400px; }
+    .seccionSegundoMenu .menuTres .tresTxt {
+      height: 400px; }
+      .seccionSegundoMenu .menuTres .tresTxt h1 {
+        font-size: 28px;
+        padding: 60px 0px 0px 0px !important;
+        text-align: center; }
+      .seccionSegundoMenu .menuTres .tresTxt p {
+        font-size: 13px; }
+  .seccionSegundoMenu .menuCuatro {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    height: 400px; }
+    .seccionSegundoMenu .menuCuatro .cuatroTxt {
+      height: 400px; }
+      .seccionSegundoMenu .menuCuatro .cuatroTxt h1 {
+        font-size: 28px;
+        padding: 60px 0px 0px 0px !important;
+        text-align: center; }
+      .seccionSegundoMenu .menuCuatro .cuatroTxt p {
+        font-size: 13px; }
+  .seccionSegundoMenu .menuCinco {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    height: 400px; }
+    .seccionSegundoMenu .menuCinco .cincoTxt {
+      height: 400px; }
+      .seccionSegundoMenu .menuCinco .cincoTxt h1 {
+        font-size: 26px;
+        padding: 50px 0px 0px 0px !important;
+        text-align: center; }
+      .seccionSegundoMenu .menuCinco .cincoTxt p {
+        font-size: 13px;
+        padding-top: 50px !important; }
+  .seccionSegundoMenu .contImg {
+    display: none; }
+  /* Seccion Testimonios*/
+  .secTest {
+    height: 850px;
+    display: flex;
+    flex-direction: column; }
+    .secTest .secTest__contenedor {
+      margin: 20px;
+      height: 350px;
+      width: 400px; }
+      .secTest .secTest__contenedor .secTest__testimonio {
+        font-size: 12px !important;
+        line-height: 25px !important; }
+  /* Seccion Clases */
+  .galeriaClases {
+    height: 620px; }
+    .galeriaClases h1 {
+      padding-top: 120px;
+      font-size: 25px; }
+    .galeriaClases p {
+      font-size: 15px;
+      padding-top: 40px; }
+    .galeriaClases .contBot {
+      height: 350px; }
+      .galeriaClases .contBot .botonesClase {
+        width: 150px;
+        height: 320px;
+        padding-bottom: 50px; }
+        .galeriaClases .contBot .botonesClase .botonUno {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaClases .contBot .botonesClase .botonUno .botonOne {
+            width: 100% !important;
+            height: 100% !important;
+            font-size: 11px;
+            padding-bottom: 150px; }
+        .galeriaClases .contBot .botonesClase .botonDos {
+          width: 95%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaClases .contBot .botonesClase .botonDos .botonTwo {
+            width: 95%;
+            height: 100%;
+            font-size: 11px;
+            padding-bottom: 150px; }
+        .galeriaClases .contBot .botonesClase .botonTres {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaClases .contBot .botonesClase .botonTres .botonThree {
+            width: 100%;
+            height: 100%;
+            font-size: 11px;
+            padding-bottom: 150px; }
+    .galeriaClases .popupMedida {
+      width: 460px;
+      height: 420px;
+      margin-left: 5px; }
+      .galeriaClases .popupMedida .contenidoPopup .popup {
+        width: 250px;
+        height: 333px; }
+      .galeriaClases .popupMedida .contenidoPopup p {
+        font-size: 11px;
+        width: 180px;
+        padding-top: 20px; }
+      .galeriaClases .popupMedida .popTitUno {
+        font-size: 16px;
+        transform: translate(80%); }
+      .galeriaClases .popupMedida .popTitDos {
+        font-size: 16px;
+        transform: translate(5%); }
+      .galeriaClases .popupMedida .popTitTres {
+        font-size: 16px;
+        transform: translate(60%); }
+  /* Seccion Talleres */
+  .galeriaTalleres {
+    height: 620px; }
+    .galeriaTalleres h1 {
+      padding-top: 120px;
+      font-size: 25px; }
+    .galeriaTalleres p {
+      font-size: 15px;
+      padding-top: 40px; }
+    .galeriaTalleres .conttBot {
+      height: 350px; }
+      .galeriaTalleres .conttBot .botonesTaller {
+        width: 150px;
+        height: 320px;
+        padding-bottom: 50px; }
+        .galeriaTalleres .conttBot .botonesTaller .botUno {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaTalleres .conttBot .botonesTaller .botUno .botOne {
+            width: 100% !important;
+            height: 100% !important;
+            font-size: 11px;
+            padding-bottom: 150px; }
+        .galeriaTalleres .conttBot .botonesTaller .botDos {
+          width: 95%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaTalleres .conttBot .botonesTaller .botDos .botTwo {
+            width: 95%;
+            height: 100%;
+            font-size: 11px;
+            padding-bottom: 150px; }
+        .galeriaTalleres .conttBot .botonesTaller .botTres {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaTalleres .conttBot .botonesTaller .botTres .botThree {
+            width: 100%;
+            height: 100%;
+            font-size: 11px;
+            padding-bottom: 150px; }
+    .galeriaTalleres .popupMedida {
+      width: 460px;
+      height: 520px;
+      margin-left: 5px; }
+      .galeriaTalleres .popupMedida .contenPopup {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 0.3fr; }
+        .galeriaTalleres .popupMedida .contenPopup p {
+          font-size: 14px;
+          width: 100%;
+          padding-top: 20px; }
+        .galeriaTalleres .popupMedida .contenPopup .popTxt {
+          font-size: 13px; }
+        .galeriaTalleres .popupMedida .contenPopup .popup {
+          width: 459px;
+          height: 296px; }
+      .galeriaTalleres .popupMedida .popTitCuatro {
+        font-size: 18px;
+        transform: translate(15%); }
+      .galeriaTalleres .popupMedida .popTitCinco {
+        font-size: 18px;
+        transform: translate(70%); }
+      .galeriaTalleres .popupMedida .popTitSeis {
+        font-size: 18px;
+        transform: translate(30%); }
+  /*Seccion Contactame */
+  .formularioContacto .formulario {
+    width: 450px;
+    height: 1150px; }
+    .formularioContacto .formulario .formNom input[type="text"] {
+      width: 360px; }
+    .formularioContacto .formulario .formTel input[type="number"] {
+      width: 360px; }
+    .formularioContacto .formulario .formEm input[type="email"] {
+      width: 360px; }
+    .formularioContacto .formulario .formMen textarea[name="mensaje"] {
+      width: 360px; }
+  /* Seccion Pide Clase */
+  .formularioClase .videoEntrada {
+    height: 240px; }
+    .formularioClase .videoEntrada .videoCont {
+      height: 100%; }
+      .formularioClase .videoEntrada .videoCont iframe {
+        width: 430px;
+        height: 240px; }
+  .formularioClase .claseGratis {
+    width: 450px; }
+    .formularioClase .claseGratis .claseTitulo {
+      font-size: 25px; }
+    .formularioClase .claseGratis .claseNom input[type="text"] {
+      width: 360px; }
+    .formularioClase .claseGratis .claseApe input[type="text"] {
+      width: 360px; }
+    .formularioClase .claseGratis .claseTel input[type="number"] {
+      width: 360px; }
+    .formularioClase .claseGratis .claseEm input[type="email"] {
+      width: 360px; }
+    .formularioClase .claseGratis .clasePreg1 textarea[name="pregunta1"] {
+      width: 360px; }
+    .formularioClase .claseGratis .clasePreg2 textarea[name="pregunta2"] {
+      width: 360px; }
+  /* Seccion Footer */
+  footer {
+    height: 240px !important; }
+    footer .piePagina {
+      height: 100%; }
+      footer .piePagina .sec1 img {
+        width: 114.28571px !important;
+        padding-top: 40px; }
+      footer .piePagina .sec2 h2 {
+        font-size: 12px !important; }
+      footer .piePagina .sec2 ul li {
+        margin-top: 5px !important; }
+        footer .piePagina .sec2 ul li a {
+          font-size: 12px; }
+      footer .piePagina .sec3 h2 {
+        font-size: 12px !important; }
+      footer .piePagina .sec3 ul li {
+        margin-top: 5px !important; }
+        footer .piePagina .sec3 ul li a {
+          font-size: 12px; }
+      footer .piePagina .sec4 h2 {
+        font-size: 12px !important;
+        margin: 0px 0px 0px 10px !important; }
+      footer .piePagina .sec4 ul {
+        display: grid !important;
+        grid-template-columns: 30px !important;
+        grid-template-rows: 30px 30px 30px !important;
+        padding-left: 25px; }
+        footer .piePagina .sec4 ul li a {
+          width: 20px;
+          height: 20px; }
+          footer .piePagina .sec4 ul li a .fa {
+            font-size: 20px; }
+  /* Seccion Botones Social */
+  .contSocial {
+    visibility: hidden; }
+  /*Seccion Sobre Mi*/
+  .sobreMi {
+    background-image: url(../media/sobremi.jpeg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr; }
+    .sobreMi .sobreTexto h1 {
+      font-size: 30px;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      color: white;
+      height: 150px;
+      padding-top: 40px;
+      margin: 0 !important; }
+    .sobreMi .sobreTexto p {
+      font-size: 14px;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      color: white;
+      height: 650px;
+      padding: 0px 40px 0px 40px;
+      margin: 0 !important;
+      line-height: 27px;
+      text-shadow: 2px 2px 2px black; }
+    .sobreMi .sobreImagen {
+      display: none; } }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Seccion Primer Menu */
+  .seccionPrimerMenu {
+    height: 550px; }
+    .seccionPrimerMenu .menuUno {
+      width: 320px;
+      height: 200px; }
+      .seccionPrimerMenu .menuUno .frontTxt h1 {
+        font-size: 18px;
+        margin-left: 10px;
+        text-shadow: 1px 1px 1px white; }
+    .seccionPrimerMenu .menuDos {
+      width: 320px;
+      height: 200px; }
+      .seccionPrimerMenu .menuDos .frontTxt h1 {
+        font-size: 18px;
+        margin-left: 20px;
+        text-shadow: 1px 1px 1px white; }
+    .seccionPrimerMenu .back p {
+      margin-top: 10px !important;
+      font-size: 10px !important;
+      padding: 10px !important;
+      line-height: 20px !important;
+      text-align: center !important; }
+    .seccionPrimerMenu .btn {
+      margin-top: 160px !important;
+      height: 20px !important;
+      width: 150px !important;
+      font-size: 12px !important; }
+  /* Seccion Carrusel */
+  .imgOne {
+    height: 300px; }
+    .imgOne h1 {
+      width: 280px;
+      font-size: 15px;
+      text-align: center;
+      padding: 20px 0px 10px 20px;
+      height: 5px; }
+    .imgOne p {
+      width: 280px;
+      font-size: 10px;
+      padding: 20px 30px 0px 0px; }
+    .imgOne a {
+      font-size: 10px;
+      right: 60px; }
+  .imgTwo {
+    height: 300px; }
+    .imgTwo h1 {
+      width: 280px;
+      font-size: 15px;
+      text-align: center;
+      padding: 10px 0px 0px 30px;
+      height: 5px; }
+    .imgTwo p {
+      width: 280px;
+      font-size: 10px;
+      padding: 20px 30px 0px 0px; }
+    .imgTwo a {
+      font-size: 10px;
+      right: 60px; }
+  .imgThree {
+    height: 300px; }
+    .imgThree h1 {
+      width: 280px;
+      font-size: 13px;
+      text-align: center;
+      padding: 25px 0px 10px 0px;
+      height: 5px; }
+    .imgThree p {
+      width: 280px;
+      font-size: 10px;
+      padding: 20px 30px 0px 10px; }
+    .imgThree a {
+      font-size: 10px;
+      right: 60px; }
+  /* Seccion Video Presentacion*/
+  .videoPresentacion {
+    height: 300px; }
+    .videoPresentacion .videoContenedor {
+      height: 200px; }
+      .videoPresentacion .videoContenedor iframe {
+        width: 350px;
+        height: 200px; }
+  /* Seccion Testimonios*/
+  .secTest {
+    height: 750px;
+    display: flex;
+    flex-direction: column; }
+    .secTest .secTest__contenedor {
+      margin: 20px;
+      height: 300px;
+      width: 320px; }
+      .secTest .secTest__contenedor .secTest__testimonio {
+        font-size: 10px !important;
+        line-height: 20px !important; }
+      .secTest .secTest__contenedor .secTest__imagen {
+        width: 200px !important;
+        height: 200px !important; }
+      .secTest .secTest__contenedor .secTest__nombre {
+        font-size: 18px !important; }
+  /* Seccion Segundo Menu */
+  .seccionSegundoMenu .menuTres {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    height: 400px; }
+    .seccionSegundoMenu .menuTres .tresTxt {
+      height: 400px;
+      border-right: none;
+      background: url(../media/sobremi.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.9;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 1fr 1fr; }
+      .seccionSegundoMenu .menuTres .tresTxt h1 {
+        font-size: 25px;
+        background: rgba(72, 181, 189, 0.7);
+        width: 100%;
+        height: 100px;
+        margin: 0 !important;
+        padding: 50px 0px 0px 0px !important;
+        text-align: center; }
+      .seccionSegundoMenu .menuTres .tresTxt p {
+        font-size: 12px;
+        background: rgba(72, 181, 189, 0.7);
+        width: 100%;
+        color: black;
+        font-weight: bolder;
+        height: 300px;
+        margin: 0 !important;
+        padding: 0px 15px 0px 15px !important;
+        letter-spacing: 1px;
+        text-align: center; }
+  .seccionSegundoMenu .menuCuatro {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    height: 400px; }
+    .seccionSegundoMenu .menuCuatro .cuatroTxt {
+      height: 400px;
+      border-right: none;
+      background: url(../media/contactame.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.9;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 1fr 1fr; }
+      .seccionSegundoMenu .menuCuatro .cuatroTxt h1 {
+        font-size: 25px;
+        background: rgba(132, 213, 219, 0.7);
+        width: 100%;
+        height: 100px;
+        margin: 0 !important;
+        padding: 30px 0px 0px 0px !important;
+        text-align: center; }
+      .seccionSegundoMenu .menuCuatro .cuatroTxt p {
+        font-size: 12px;
+        background: rgba(132, 213, 219, 0.7);
+        width: 100%;
+        color: black;
+        font-weight: bolder;
+        height: 300px;
+        margin: 0 !important;
+        padding: 0px 13px 0px 13px !important; }
+  .seccionSegundoMenu .menuCinco {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    height: 400px; }
+    .seccionSegundoMenu .menuCinco .cincoTxt {
+      height: 400px;
+      border-right: none;
+      background: url(../media/pideclase.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.9;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 1fr 1fr; }
+      .seccionSegundoMenu .menuCinco .cincoTxt h1 {
+        font-size: 23px;
+        background: rgba(72, 181, 189, 0.7);
+        width: 100%;
+        height: 100px;
+        margin: 0 !important;
+        padding: 50px 0px 0px 0px !important;
+        text-align: center; }
+      .seccionSegundoMenu .menuCinco .cincoTxt p {
+        font-size: 12px;
+        background: rgba(72, 181, 189, 0.7);
+        width: 100%;
+        color: black;
+        font-weight: bolder;
+        height: 300px;
+        margin: 0 !important;
+        padding: 20px 13px 0px 13px !important; }
+  /* Seccion Clases */
+  .galeriaClases {
+    height: 550px; }
+    .galeriaClases h1 {
+      padding-top: 80px;
+      font-size: 23px; }
+    .galeriaClases p {
+      font-size: 12px;
+      padding-top: 40px; }
+    .galeriaClases .contBot {
+      height: 300px; }
+      .galeriaClases .contBot .botonesClase {
+        width: 90px;
+        height: 220px;
+        padding-bottom: 50px; }
+        .galeriaClases .contBot .botonesClase .botonUno {
+          width: 90px;
+          height: 220px;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaClases .contBot .botonesClase .botonUno .botonOne {
+            width: 90px;
+            height: 220px;
+            font-size: 8px;
+            padding-bottom: 130px; }
+        .galeriaClases .contBot .botonesClase .botonDos {
+          width: 90px;
+          height: 220px;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaClases .contBot .botonesClase .botonDos .botonTwo {
+            width: 90px;
+            height: 220px;
+            font-size: 7px;
+            padding-bottom: 130px;
+            letter-spacing: 1px; }
+        .galeriaClases .contBot .botonesClase .botonTres {
+          width: 90px;
+          height: 220px;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaClases .contBot .botonesClase .botonTres .botonThree {
+            width: 90px;
+            height: 220px;
+            font-size: 8px;
+            padding-bottom: 130px; }
+    .galeriaClases .popupMedida {
+      width: 340px;
+      height: 360px; }
+      .galeriaClases .popupMedida .contenidoPopup .popup {
+        width: 200px;
+        height: 266px; }
+      .galeriaClases .popupMedida .contenidoPopup p {
+        font-size: 9px;
+        width: 130px;
+        padding: 10px 30px 0px 0px; }
+      .galeriaClases .popupMedida .popTitUno {
+        font-size: 14px;
+        transform: translate(50%); }
+      .galeriaClases .popupMedida .popTitDos {
+        font-size: 14px;
+        text-align: center;
+        transform: translate(1%); }
+      .galeriaClases .popupMedida .popTitTres {
+        font-size: 14px;
+        transform: translate(40%); }
+  /* Seccion Talleres */
+  .galeriaTalleres {
+    height: 550px; }
+    .galeriaTalleres h1 {
+      padding-top: 80px;
+      font-size: 23px; }
+    .galeriaTalleres p {
+      font-size: 12px;
+      padding-top: 40px; }
+    .galeriaTalleres .conttBot {
+      height: 300px; }
+      .galeriaTalleres .conttBot .botonesTaller {
+        width: 90px;
+        height: 220px;
+        padding-bottom: 50px; }
+        .galeriaTalleres .conttBot .botonesTaller .botUno {
+          width: 90px;
+          height: 220px;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaTalleres .conttBot .botonesTaller .botUno .botOne {
+            width: 90px;
+            height: 220px;
+            font-size: 8px;
+            padding-bottom: 130px; }
+        .galeriaTalleres .conttBot .botonesTaller .botDos {
+          width: 90px;
+          height: 220px;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaTalleres .conttBot .botonesTaller .botDos .botTwo {
+            width: 90px;
+            height: 220px;
+            font-size: 8px;
+            padding-bottom: 130px; }
+        .galeriaTalleres .conttBot .botonesTaller .botTres {
+          width: 90px;
+          height: 220px;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaTalleres .conttBot .botonesTaller .botTres .botThree {
+            width: 90px;
+            height: 220px;
+            font-size: 8px;
+            padding-bottom: 130px; }
+    .galeriaTalleres .popupMedida {
+      width: 340px;
+      height: 400px;
+      margin-left: 5px; }
+      .galeriaTalleres .popupMedida .contenPopup {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 0.3fr; }
+        .galeriaTalleres .popupMedida .contenPopup p {
+          font-size: 14px;
+          width: 100%;
+          padding-top: 0; }
+        .galeriaTalleres .popupMedida .contenPopup .popTxt {
+          font-size: 11px; }
+        .galeriaTalleres .popupMedida .contenPopup .popup {
+          width: 339px;
+          height: 218px; }
+      .galeriaTalleres .popupMedida .popTitCuatro {
+        font-size: 15px;
+        transform: translate(5%); }
+      .galeriaTalleres .popupMedida .popTitCinco {
+        font-size: 16px;
+        transform: translate(50%); }
+      .galeriaTalleres .popupMedida .popTitSeis {
+        font-size: 16px;
+        transform: translate(20%); }
+  /* Sección Newsletter */
+  .newsletter h2 {
+    font-size: 15px; }
+  .newsletter .cajaInput .newsMail {
+    width: 250px;
+    font-size: 12px; }
+  /* Seccion Footer */
+  footer {
+    height: 240px !important; }
+    footer .piePagina {
+      height: 100%;
+      padding-bottom: 140px; }
+      footer .piePagina .sec1 img {
+        width: 88.88889px !important;
+        padding-top: 140px; }
+      footer .piePagina .sec2 h2 {
+        font-size: 10px !important;
+        margin: 0px 30px 0px 0px !important; }
+      footer .piePagina .sec2 ul {
+        margin-top: 10px !important; }
+        footer .piePagina .sec2 ul li {
+          margin-top: 10px !important;
+          line-height: 15px !important; }
+          footer .piePagina .sec2 ul li a {
+            font-size: 11.5px;
+            margin: 0;
+            padding-top: 10px;
+            letter-spacing: 0;
+            line-height: 5px !important; }
+      footer .piePagina .sec3 h2 {
+        font-size: 10px !important;
+        margin: 0 !important;
+        padding-left: 10px; }
+      footer .piePagina .sec3 ul {
+        margin-top: 10px !important; }
+        footer .piePagina .sec3 ul li {
+          margin-top: 10px !important;
+          line-height: 15px !important; }
+          footer .piePagina .sec3 ul li a {
+            font-size: 11.5px;
+            margin: 0;
+            padding-top: 10px;
+            letter-spacing: 0;
+            line-height: 5px !important; }
+      footer .piePagina .sec4 h2 {
+        font-size: 10px !important;
+        margin: 0px 0px 0px 10px !important; }
+      footer .piePagina .sec4 ul {
+        display: grid !important;
+        grid-template-columns: 30px !important;
+        grid-template-rows: 30px 30px 30px !important;
+        padding-left: 25px; }
+        footer .piePagina .sec4 ul li a {
+          width: 20px;
+          height: 20px; }
+          footer .piePagina .sec4 ul li a .fa {
+            font-size: 20px; }
+    footer .copyright p {
+      font-size: 12px !important; }
+  /*Seccion Contactame */
+  .imgContacto {
+    height: 30vh;
+    margin-bottom: 10vh; }
+  .formularioContacto {
+    padding-bottom: 100px; }
+    .formularioContacto .formulario {
+      width: 350px;
+      height: 1200px;
+      padding-bottom: 0 !important; }
+      .formularioContacto .formulario .formNom input[type="text"] {
+        width: 270px; }
+      .formularioContacto .formulario .formTel input[type="number"] {
+        width: 270px; }
+      .formularioContacto .formulario .formEm input[type="email"] {
+        width: 270px; }
+      .formularioContacto .formulario .formPais select[name="pais"] {
+        width: 270px; }
+        .formularioContacto .formulario .formPais select[name="pais"] option {
+          width: 270px; }
+      .formularioContacto .formulario .formMen textarea[name="mensaje"] {
+        width: 270px; }
+  /* Seccion Pide Clase */
+  .formularioClase .videoEntrada {
+    height: 280px; }
+    .formularioClase .videoEntrada .videoCont {
+      height: 200px; }
+      .formularioClase .videoEntrada .videoCont iframe {
+        width: 350px;
+        height: 200px; }
+  .formularioClase .tituloClase {
+    font-size: 28px; }
+  .formularioClase p {
+    margin-bottom: 50px; }
+  .formularioClase .claseGratis {
+    width: 350px;
+    height: 1500px;
+    padding-bottom: 0 !important; }
+    .formularioClase .claseGratis .claseTitulo {
+      font-size: 20px; }
+    .formularioClase .claseGratis .claseNom input[type="text"] {
+      width: 270px; }
+    .formularioClase .claseGratis .claseApe input[type="text"] {
+      width: 270px; }
+    .formularioClase .claseGratis .claseTel input[type="number"] {
+      width: 270px; }
+    .formularioClase .claseGratis .claseEm input[type="email"] {
+      width: 270px; }
+    .formularioClase .claseGratis .clasePais select[name="pais"] {
+      width: 270px; }
+      .formularioClase .claseGratis .clasePais select[name="pais"] option {
+        width: 270px; }
+    .formularioClase .claseGratis .clasePreg1 textarea[name="pregunta1"] {
+      width: 270px; }
+    .formularioClase .claseGratis .clasePreg2 textarea[name="pregunta2"] {
+      width: 270px; }
+  /* Seccion Botones Social */
+  .contSocial {
+    visibility: hidden; }
+  /*Seccion Sobre Mi*/
+  .sobreMi {
+    background-image: url(../media/sobremi.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr; }
+    .sobreMi .sobreTexto h1 {
+      font-size: 30px;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      color: white;
+      height: 120px;
+      padding-top: 40px;
+      margin: 0 !important; }
+    .sobreMi .sobreTexto p {
+      font-size: 12px;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      color: white;
+      height: 680px;
+      padding: 0px 40px 0px 40px;
+      margin: 0 !important;
+      line-height: 26px;
+      text-shadow: 2px 2px 2px black; }
+    .sobreMi .sobreImagen {
+      display: none; } }
+
+/* Iphone 5/SE */
+@media (min-width: 281px) and (max-width: 320px) {
+  /* Seccion Carrusel */
+  .imgOne {
+    height: 50vh !important; }
+    .imgOne h1 {
+      padding: 10px 0px 0px 30px; }
+    .imgOne p {
+      padding: 20px 30px 0px 0px; }
+    .imgOne a {
+      right: 50px; }
+  .imgTwo {
+    height: 50vh !important; }
+    .imgTwo h1 {
+      padding: 10px 0px 0px 30px; }
+    .imgTwo p {
+      padding: 20px 30px 0px 0px; }
+    .imgTwo a {
+      right: 50px; }
+  .imgThree {
+    height: 50vh !important; }
+    .imgThree h1 {
+      padding: 10px 10px 0px 0px;
+      font-size: 12px !important; }
+    .imgThree p {
+      padding: 20px 30px 0px 0px; }
+    .imgThree a {
+      right: 50px; }
+  /* Seccion Video Presentacion*/
+  .videoPresentacion {
+    height: 300px; }
+    .videoPresentacion .videoContenedor {
+      height: 150px !important; }
+      .videoPresentacion .videoContenedor iframe {
+        width: 250px !important;
+        height: 150px !important; }
+  /* Seccion Clases */
+  .galeriaClases {
+    height: 550px; }
+    .galeriaClases h1 {
+      font-size: 21px;
+      letter-spacing: 1.5px; }
+    .galeriaClases p {
+      font-size: 12px; }
+    .galeriaClases .contBot {
+      height: 280px; }
+      .galeriaClases .contBot .botonesClase {
+        width: 80px;
+        height: 200px; }
+        .galeriaClases .contBot .botonesClase .botonUno {
+          width: 80px;
+          height: 200px; }
+          .galeriaClases .contBot .botonesClase .botonUno .botonOne {
+            width: 80px;
+            height: 200px;
+            font-size: 8px; }
+        .galeriaClases .contBot .botonesClase .botonDos {
+          width: 80px;
+          height: 200px; }
+          .galeriaClases .contBot .botonesClase .botonDos .botonTwo {
+            width: 80px;
+            height: 200px;
+            font-size: 7px;
+            padding-bottom: 130px;
+            letter-spacing: 0.5px; }
+        .galeriaClases .contBot .botonesClase .botonTres {
+          width: 80px;
+          height: 200px;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaClases .contBot .botonesClase .botonTres .botonThree {
+            width: 80px;
+            height: 200px;
+            font-size: 8px;
+            padding-bottom: 130px; }
+    .galeriaClases .popupMedida {
+      width: 300px !important;
+      height: 340px; }
+      .galeriaClases .popupMedida .contenidoPopup .popup {
+        width: 180px;
+        height: 240px; }
+      .galeriaClases .popupMedida .contenidoPopup p {
+        font-size: 8px;
+        width: 130px;
+        padding: 0px 45px 0px 0px; }
+      .galeriaClases .popupMedida .popTitUno {
+        font-size: 13px;
+        transform: translate(45%); }
+      .galeriaClases .popupMedida .popTitDos {
+        font-size: 13px;
+        text-align: center;
+        transform: translate(1%); }
+      .galeriaClases .popupMedida .popTitTres {
+        font-size: 13px;
+        transform: translate(35%); }
+  /* Seccion Talleres */
+  .galeriaTalleres {
+    height: 550px; }
+    .galeriaTalleres h1 {
+      padding-top: 80px;
+      font-size: 23px; }
+    .galeriaTalleres p {
+      font-size: 12px;
+      padding-top: 40px; }
+    .galeriaTalleres .conttBot {
+      height: 280px; }
+      .galeriaTalleres .conttBot .botonesTaller {
+        width: 80px;
+        height: 200px; }
+        .galeriaTalleres .conttBot .botonesTaller .botUno {
+          width: 80px;
+          height: 200px; }
+          .galeriaTalleres .conttBot .botonesTaller .botUno .botOne {
+            width: 80px;
+            height: 200px;
+            font-size: 8px; }
+        .galeriaTalleres .conttBot .botonesTaller .botDos {
+          width: 80px;
+          height: 200px; }
+          .galeriaTalleres .conttBot .botonesTaller .botDos .botTwo {
+            width: 80px;
+            height: 200px;
+            font-size: 7px;
+            padding-bottom: 130px;
+            letter-spacing: 0.5px; }
+        .galeriaTalleres .conttBot .botonesTaller .botTres {
+          width: 80px;
+          height: 200px;
+          display: flex;
+          align-items: flex-end; }
+          .galeriaTalleres .conttBot .botonesTaller .botTres .botThree {
+            width: 80px;
+            height: 200px;
+            font-size: 8px;
+            padding-bottom: 130px; }
+    .galeriaTalleres .popupMedida {
+      width: 300px !important;
+      height: 380px;
+      margin-left: 5px; }
+      .galeriaTalleres .popupMedida .contenPopup {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 0.3fr; }
+        .galeriaTalleres .popupMedida .contenPopup p {
+          font-size: 12px;
+          width: 100%;
+          padding-top: 0; }
+        .galeriaTalleres .popupMedida .contenPopup .popTxt {
+          font-size: 11px; }
+        .galeriaTalleres .popupMedida .contenPopup .popup {
+          width: 299px;
+          height: 193px; }
+      .galeriaTalleres .popupMedida .popTitCuatro {
+        font-size: 14px;
+        text-align: center;
+        transform: translate(1%); }
+      .galeriaTalleres .popupMedida .popTitCinco {
+        font-size: 15px;
+        transform: translate(40%); }
+      .galeriaTalleres .popupMedida .popTitSeis {
+        font-size: 15px;
+        transform: translate(10%); }
+  /* Seccion Primer Menu */
+  .seccionPrimerMenu {
+    height: 450px !important; }
+    .seccionPrimerMenu .menuUno {
+      width: 280px !important;
+      height: 160px !important; }
+      .seccionPrimerMenu .menuUno .frontTxt h1 {
+        font-size: 15px !important;
+        margin-left: 10px;
+        text-shadow: 1px 1px 1px white; }
+    .seccionPrimerMenu .menuDos {
+      width: 280px !important;
+      height: 160px !important; }
+      .seccionPrimerMenu .menuDos .frontTxt h1 {
+        font-size: 15px;
+        margin-left: 20px;
+        text-shadow: 1px 1px 1px white; }
+    .seccionPrimerMenu .back p {
+      margin-top: 10px !important;
+      font-size: 8px !important;
+      padding: 10px !important;
+      line-height: 20px !important;
+      text-align: center !important; }
+    .seccionPrimerMenu .btn {
+      margin-top: 130px !important;
+      height: 15px !important;
+      width: 100px !important;
+      font-size: 8px !important; }
+  /* Seccion Testimonios */
+  .secTest {
+    height: 700px;
+    display: flex;
+    flex-direction: column; }
+    .secTest .secTest__contenedor {
+      margin: 20px;
+      height: 260px;
+      width: 280px; }
+      .secTest .secTest__contenedor .secTest__testimonio {
+        font-size: 9.5px !important;
+        line-height: 16px !important; }
+        .secTest .secTest__contenedor .secTest__testimonio b {
+          font-size: 10px !important; }
+      .secTest .secTest__contenedor .secTest__imagen {
+        width: 160px !important;
+        height: 160px !important; }
+      .secTest .secTest__contenedor .secTest__nombre {
+        font-size: 16px !important; }
+  /* Seccion Footer */
+  footer {
+    height: 190px !important; }
+    footer .piePagina {
+      height: 100%;
+      padding-bottom: 140px; }
+      footer .piePagina .sec1 img {
+        width: 88.88889px !important;
+        padding-top: 140px; }
+      footer .piePagina .sec2 h2 {
+        font-size: 8px !important;
+        margin: 0px 30px 0px 0px !important; }
+      footer .piePagina .sec2 ul {
+        margin-top: 10px !important; }
+        footer .piePagina .sec2 ul li {
+          margin-top: 10px !important;
+          line-height: 12px !important; }
+          footer .piePagina .sec2 ul li a {
+            font-size: 8px;
+            margin: 0;
+            padding-top: 10px; }
+      footer .piePagina .sec3 h2 {
+        font-size: 8px !important;
+        margin: 0 !important;
+        padding: 0px 30px 0px 0px !important; }
+      footer .piePagina .sec3 ul {
+        margin-top: 10px !important; }
+        footer .piePagina .sec3 ul li {
+          margin-top: 10px !important;
+          line-height: 12px !important; }
+          footer .piePagina .sec3 ul li a {
+            font-size: 8px;
+            margin: 0;
+            padding-top: 10px; }
+      footer .piePagina .sec4 h2 {
+        font-size: 8px !important;
+        margin: 0px 0px 0px 5px !important; }
+      footer .piePagina .sec4 ul {
+        display: grid !important;
+        grid-template-columns: 30px !important;
+        grid-template-rows: 30px 30px 30px !important; }
+        footer .piePagina .sec4 ul li a {
+          width: 20px;
+          height: 20px;
+          padding-right: 30px; }
+          footer .piePagina .sec4 ul li a .fa {
+            font-size: 20px; }
+    footer .copyright p {
+      font-size: 10px !important; }
+  /* Sección Newsletter */
+  .newsletter {
+    height: 150px; }
+    .newsletter h2 {
+      font-size: 13px !important; }
+    .newsletter .cajaInput {
+      padding-bottom: 10px; }
+      .newsletter .cajaInput .newsMail {
+        width: 180px !important;
+        height: 30px; }
+      .newsletter .cajaInput .newsBoton {
+        width: 80px;
+        height: 30px;
+        font-style: 13px; }
+  /* Seccion Segundo Menu */
+  .seccionSegundoMenu .menuTres .tresTxt h1 {
+    font-size: 22px;
+    padding: 50px 0px 0px 0px !important;
+    text-align: center; }
+  .seccionSegundoMenu .menuTres .tresTxt p {
+    font-size: 11px;
+    padding: 0px 20px 0px 20px !important; }
+  .seccionSegundoMenu .menuCuatro .cuatroTxt h1 {
+    font-size: 22px;
+    padding: 50px 0px 0px 0px !important;
+    text-align: center; }
+  .seccionSegundoMenu .menuCuatro .cuatroTxt p {
+    font-size: 11px;
+    padding: 30px 20px 0px 20px !important; }
+  .seccionSegundoMenu .menuCinco .cincoTxt h1 {
+    font-size: 20px;
+    padding: 50px 0px 0px 0px !important;
+    text-align: center; }
+  .seccionSegundoMenu .menuCinco .cincoTxt p {
+    font-size: 11px;
+    padding: 20px 20px 0px 20px !important; }
+  /*Seccion Sobre Mi*/
+  .sobreMi .sobreTexto h1 {
+    font-size: 28px; }
+  .sobreMi .sobreTexto p {
+    font-size: 11px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    height: 680px;
+    padding: 0px 40px 0px 40px;
+    margin: 0 !important;
+    line-height: 20px;
+    text-shadow: 2px 2px 2px black; }
+  .sobreMi .sobreImagen {
+    display: none; }
+  /*Seccion Contactame */
+  .imgContacto {
+    height: 30vh;
+    margin-bottom: 10vh; }
+  .formularioContacto {
+    padding-bottom: 100px; }
+    .formularioContacto .formulario {
+      width: 300px;
+      height: 1000px; }
+      .formularioContacto .formulario h1 {
+        font-size: 25px; }
+      .formularioContacto .formulario p {
+        font-size: 15px; }
+      .formularioContacto .formulario label[for="nombre"],
+      .formularioContacto .formulario label[for="telefono"],
+      .formularioContacto .formulario label[for="email"],
+      .formularioContacto .formulario label[for="pais"],
+      .formularioContacto .formulario label[for="mensaje"] {
+        font-size: 13px; }
+      .formularioContacto .formulario .formNom input[type="text"] {
+        width: 220px;
+        font-size: 13px;
+        height: 25px; }
+      .formularioContacto .formulario .formTel input[type="number"] {
+        width: 220px;
+        font-size: 13px;
+        height: 25px; }
+      .formularioContacto .formulario .formEm input[type="email"] {
+        width: 220px;
+        font-size: 13px;
+        height: 25px; }
+      .formularioContacto .formulario .formPais select[name="pais"] {
+        width: 220px;
+        font-size: 13px;
+        height: 25px; }
+        .formularioContacto .formulario .formPais select[name="pais"] option {
+          width: 220px;
+          font-size: 13px;
+          height: 25px; }
+      .formularioContacto .formulario .formMen textarea[name="mensaje"] {
+        width: 220px;
+        font-size: 13px; }
+      .formularioContacto .formulario textarea[name="mensaje"]:focus {
+        font-size: 13px;
+        width: 220px;
+        padding: 0; }
+      .formularioContacto .formulario .formBoton input[type="submit"] {
+        width: 150px;
+        height: 30px;
+        font-size: 13px; }
+  /* Seccion Pide Clase */
+  .formularioClase .videoEntrada {
+    height: 300px; }
+    .formularioClase .videoEntrada .videoCont {
+      height: 150px; }
+      .formularioClase .videoEntrada .videoCont iframe {
+        width: 250px;
+        height: 150px; }
+  .formularioClase .tituloClase {
+    font-size: 20px; }
+  .formularioClase p {
+    font-size: 13px;
+    padding: 10px 20px 0px 20px;
+    margin-bottom: 50px; }
+  .formularioClase .claseGratis {
+    width: 300px;
+    height: 1200px; }
+    .formularioClase .claseGratis .claseTitulo {
+      font-size: 18px; }
+    .formularioClase .claseGratis label[for="nombre"],
+    .formularioClase .claseGratis label[for="apellido"],
+    .formularioClase .claseGratis label[for="telefono"],
+    .formularioClase .claseGratis label[for="email"],
+    .formularioClase .claseGratis label[for="pais"],
+    .formularioClase .claseGratis label[for="pregunta1"],
+    .formularioClase .claseGratis label[for="pregunta2"] {
+      font-size: 13px; }
+    .formularioClase .claseGratis .claseNom input[type="text"] {
+      width: 220px;
+      font-size: 13px;
+      height: 25px; }
+    .formularioClase .claseGratis .claseApe input[type="text"] {
+      width: 220px;
+      font-size: 13px;
+      height: 25px; }
+    .formularioClase .claseGratis .claseTel input[type="number"] {
+      width: 220px;
+      font-size: 13px;
+      height: 25px; }
+    .formularioClase .claseGratis .claseEm input[type="email"] {
+      width: 220px;
+      font-size: 13px;
+      height: 25px; }
+    .formularioClase .claseGratis .clasePais select[name="pais"] {
+      width: 220px;
+      font-size: 13px;
+      height: 25px; }
+      .formularioClase .claseGratis .clasePais select[name="pais"] option {
+        width: 220px;
+        font-size: 13px;
+        height: 25px; }
+    .formularioClase .claseGratis .clasePreg1 textarea[name="pregunta1"] {
+      width: 220px;
+      font-size: 13px; }
+    .formularioClase .claseGratis .clasePreg2 textarea[name="pregunta2"] {
+      width: 220px;
+      font-size: 13px; } }
